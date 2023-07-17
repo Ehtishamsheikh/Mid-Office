@@ -8,6 +8,12 @@
   url("fonts/bootstrap/glyphicons-halflings-regular.svg") format("svg");
 }
 
+body{
+  margin: 0px !important;
+  padding:0px !important;
+}
+
+
 .navbar {
   --bs-navbar-padding-y: -0.5rem !important;
 }
@@ -38,25 +44,21 @@
   border-right: 1px solid #ddd;
 }
 
-#drip .btn {
-  font-size: 11px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+
+#drip:hover a{
+  background: rgb(255, 255, 255);
+  color: black;
+  padding-left:10px;
+  padding-right:10px;
+  margin:auto;
 }
 
-#secondNav a:hover,
-#drip:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
+
+
+
 
 #dripmenu {
-  display: none;
+  display:none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -76,6 +78,7 @@
 
 #dripmenu a:hover {
   background-color: #ddd;
+
 }
 
 #drip:hover #dripmenu {
@@ -100,6 +103,9 @@
 #accountsub {
   top: 68px;
 }
+#accountsub1 {
+  top: 90px;
+  left: -153px;}
 
 #mappingsub {
   top: 80px;
@@ -115,17 +121,14 @@
 
 #trxsub {
   top: 200px;
-  ;
 }
 
 #suppsub {
   top: 240px;
-  ;
 }
 
 #marksub {
   top: 320px;
-  ;
 }
 
 #mealsub {
@@ -134,37 +137,30 @@
 
 #marketsub {
   top: 370px;
-  ;
 }
 
 #paysub {
   top: 400px;
-  ;
 }
 
 #banksub {
   top: 480px;
-  ;
 }
 
 #cursub {
   top: 530px;
-  ;
 }
 
 #taxsub {
   top: 570px;
-  ;
 }
 
 #loyaltysub {
   top: 610px;
-  ;
 }
 
 #vehiclesub {
   top: 740px;
-  ;
 }
 
 .dropdown-menu .dropdown-submenu-left {
@@ -196,12 +192,12 @@ header {
 
 thead {
   background-color: #337AB7;
-  font-size: 14px;
+  font-size: 11px;
   color: #f9f9f9;
 }
 
 th {
-  font-size: 11px;
+  font-size: 10px;
   text-align: center !important;
 }
 
@@ -459,8 +455,12 @@ input[type="file"] {
 }
 
 #tickschecks {
+  display: contents;
+  font-size: 21px;
+}
+#tickscheckss {
   display: flex;
-  font-size: 14px;
+  font-size: 21px;
 }
 
 #tickscheck {
@@ -468,7 +468,7 @@ input[type="file"] {
 }
 
 #tickspc {
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .text-danger {
@@ -535,7 +535,7 @@ color:grey;
   font-weight: 600;
 color:grey;
 }
-.col-md-2 span{
+.col-md-2,.col-md-4,.col-md-5 span{
   font-size: 12px;
 }
 .btn-dark {
@@ -638,7 +638,10 @@ color:grey;
 }
 
 .radioline {
-  display: flex !important;
+  display: contents;
+}
+.radioline1{
+  display: flex;
 }
 
 #app {
@@ -765,6 +768,16 @@ color:grey;
     .nav-tabs {
       border-bottom: 1px solid #e4e5e7;
   }
+
+  #tbl_tour td b {
+    border: 1px solid gray;
+    border-radius: 0.4em;
+    padding: 3px 5px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+
   @media only screen and (max-width:960px) {
     #firstNav{
       display: none;
@@ -785,5 +798,12 @@ color:grey;
     .input-group-addon {
       height: 31px;
     }
+    #drip:hover #dripmenu {
+      display: contents;
+    }
+    .dropdown-menu>li:hover>.dropdown-submenu {
+      display:contents;
+    }
+    
     
   }
