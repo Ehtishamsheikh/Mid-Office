@@ -992,17 +992,14 @@
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">ACTIVITY DETAILS</h5>
+                    <h5 style="font-size:14pt;font-weight: 500;">SEARCH SUPPLEMENT DETAILS</h5>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
 
                 </div>
-                <div class="col-md-3">
-                    <i class="fa-solid fa-house-chimney"></i><span> / <a href="Masters Tours&ActivitiesSearch.html"
-                            style="color:grey;text-decoration:none;">List Activity </a> / Add Activity
-                    </span>
+                <div class="col-md-2">
+                    <i class="fa-solid fa-house-chimney"></i><span> / List Supplement</span>
                 </div>
-            </div>
 
             </div>
         </header>
@@ -1015,606 +1012,501 @@
 
         <!-- First Row-->
 
-        <form action="tours.php" method="post" name="add_tour_form" id="add_tour_form" enctype="multipart/form-data">
+        <form action="area.php" method="post" name="add_area_form" id="add_area_form">
             <input type="hidden" name="action" value="insert">
-            <input type="hidden" name="add_another">
+            <input type="hidden" name="goahead_areaname" id="goahead" value="">
             <div class="panel-body">
                 <div class="row mt-2">
-                    <div class="form-group col-md-3">
-                        <label>Country</label>
-                        <select name="sel_countries" id="country" onchange="getCityList(this.value);"
-                            class="select_width1 form-control form-control-sm selectpicker show-menu-arrow required bs-select-hidden"
-                            data-live-search-style="startsWith" data-live-search="true">
-                            <option value="0"> - Select Country -</option>
-                            <option label="Afghanistan" value="97">Afghanistan</option>
-                            <option label="Albania" value="43">Albania</option>
-                            <option label="Algeria" value="142">Algeria</option>
-                            <option label="Andorra" value="44">Andorra</option>
-                            <option label="Angola" value="143">Angola</option>
-                            <option label="Antigua And Barbuda" value="230">Antigua And Barbuda</option>
-                            <option label="Argentina" value="29">Argentina</option>
-                            <option label="Armenia" value="45">Armenia</option>
-                            <option label="Aruba" value="231">Aruba</option>
-                            <option label="Australia" value="196">Australia</option>
-                            <option label="Austria" value="46">Austria</option>
-                            <option label="Azerbaijan" value="47">Azerbaijan</option>
-                            <option label="Bahamas" value="3">Bahamas</option>
-                            <option label="Bahrain" value="98">Bahrain</option>
-                            <option label="Bangladesh" value="99">Bangladesh</option>
-                            <option label="Barbados" value="4">Barbados</option>
-                            <option label="Belarus" value="48">Belarus</option>
-                            <option label="Belgium" value="49">Belgium</option>
-                            <option label="Belize" value="5">Belize</option>
-                            <option label="Benin" value="144">Benin</option>
-                            <option label="Bermuda" value="6">Bermuda</option>
-                            <option label="Bhutan" value="100">Bhutan</option>
-                            <option label="Bolivia" value="30">Bolivia</option>
-                            <option label="Bonaire, Sint Eustatius and Saba" value="416">Bonaire, Sint Eustatius and
-                                Saba</option>
-                            <option label="Bosnia and Herzegovina" value="50">Bosnia and Herzegovina</option>
-                            <option label="Botswana" value="145">Botswana</option>
-                            <option label="Brazil" value="31">Brazil</option>
-                            <option label="British Virgin Islands" value="7">British Virgin Islands</option>
-                            <option label="Brunei" value="101">Brunei</option>
-                            <option label="Bulgaria" value="51">Bulgaria</option>
-                            <option label="Burkina Faso" value="146">Burkina Faso</option>
-                            <option label="Burundi" value="147">Burundi</option>
-                            <option label="Cambodia" value="102">Cambodia</option>
-                            <option label="Cameroon" value="148">Cameroon</option>
-                            <option label="Canada" value="2">Canada</option>
-                            <option label="Cape Verde" value="149">Cape Verde</option>
-                            <option label="Cayman Islands" value="8">Cayman Islands</option>
-                            <option label="Central African Republic" value="150">Central African Republic</option>
-                            <option label="Chad" value="151">Chad</option>
-                            <option label="Chile" value="32">Chile</option>
-                            <option label="China" value="103">China</option>
-                            <option label="Colombia" value="33">Colombia</option>
-                            <option label="Comoros" value="402">Comoros</option>
-                            <option label="Cook Islands" value="412">Cook Islands</option>
-                            <option label="Costa Rica" value="9">Costa Rica</option>
-                            <option label="Croatia" value="52">Croatia</option>
-                            <option label="Cuba" value="10">Cuba</option>
-                            <option label="Curacao" value="415">Curacao</option>
-                            <option label="Cyprus" value="53">Cyprus</option>
-                            <option label="Czech Republic" value="54">Czech Republic</option>
-                            <option label="Democratic Republic of the Congo" value="153">Democratic Republic of the
-                                Congo</option>
-                            <option label="Denmark" value="55">Denmark</option>
-                            <option label="Djibouti" value="154">Djibouti</option>
-                            <option label="Dominica" value="11">Dominica</option>
-                            <option label="Dominican Republic" value="12">Dominican Republic</option>
-                            <option label="East Timor" value="104">East Timor</option>
-                            <option label="Ecuador" value="34">Ecuador</option>
-                            <option label="Egypt" value="155">Egypt</option>
-                            <option label="El Salvador" value="13">El Salvador</option>
-                            <option label="Equatorial Guinea" value="156">Equatorial Guinea</option>
-                            <option label="Eritrea" value="157">Eritrea</option>
-                            <option label="Estonia" value="56">Estonia</option>
-                            <option label="Ethiopia" value="158">Ethiopia</option>
-                            <option label="Falkland Islands" value="35">Falkland Islands</option>
-                            <option label="Fiji Islands" value="198">Fiji Islands</option>
-                            <option label="Finland" value="57">Finland</option>
-                            <option label="France" value="58">France</option>
-                            <option label="French Guiana" value="36">French Guiana</option>
-                            <option label="French Polynesia" value="199">French Polynesia</option>
-                            <option label="Gabon" value="159">Gabon</option>
-                            <option label="Gambia" value="160">Gambia</option>
-                            <option label="Georgia" value="59">Georgia</option>
-                            <option label="Germany" value="60">Germany</option>
-                            <option label="Ghana" value="161">Ghana</option>
-                            <option label="Gibraltar" value="61">Gibraltar</option>
-                            <option label="Greece" value="62">Greece</option>
-                            <option label="Greece Islands" value="404">Greece Islands</option>
-                            <option label="Greenland" value="14">Greenland</option>
-                            <option label="Grenada" value="15">Grenada</option>
-                            <option label="Guadeloupe" value="16">Guadeloupe</option>
-                            <option label="Guam" value="200">Guam</option>
-                            <option label="Guatemala" value="17">Guatemala</option>
-                            <option label="Guernsey" value="63">Guernsey</option>
-                            <option label="Guinea" value="162">Guinea</option>
-                            <option label="Guinea Bissau" value="163">Guinea Bissau</option>
-                            <option label="Guyana" value="37">Guyana</option>
-                            <option label="Haiti" value="18">Haiti</option>
-                            <option label="Honduras" value="19">Honduras</option>
-                            <option label="Hong Kong" value="105">Hong Kong</option>
-                            <option label="Hungary" value="64">Hungary</option>
-                            <option label="Iceland" value="65">Iceland</option>
-                            <option label="India" value="106">India</option>
-                            <option label="Indonesia" value="107">Indonesia</option>
-                            <option label="Iran" value="108">Iran</option>
-                            <option label="Iraq" value="109">Iraq</option>
-                            <option label="Ireland" value="66">Ireland</option>
-                            <option label="Isle of Man" value="67">Isle of Man</option>
-                            <option label="Israel" value="110">Israel</option>
-                            <option label="Italy" value="68">Italy</option>
-                            <option label="Ivory Coast" value="164">Ivory Coast</option>
-                            <option label="Jamaica" value="20">Jamaica</option>
-                            <option label="Japan" value="111">Japan</option>
-                            <option label="Jersey" value="69">Jersey</option>
-                            <option label="Jordan" value="112">Jordan</option>
-                            <option label="Kazakhstan" value="113">Kazakhstan</option>
-                            <option label="Kenya" value="165">Kenya</option>
-                            <option label="Kiribati" value="201">Kiribati</option>
-                            <option label="Kosovo" value="70">Kosovo</option>
-                            <option label="Kuwait" value="114">Kuwait</option>
-                            <option label="Kyrgyzstan" value="115">Kyrgyzstan</option>
-                            <option label="Laos" value="116">Laos</option>
-                            <option label="Latvia" value="71">Latvia</option>
-                            <option label="Lebanon" value="117">Lebanon</option>
-                            <option label="Lesotho" value="166">Lesotho</option>
-                            <option label="Liberia" value="167">Liberia</option>
-                            <option label="Libya" value="168">Libya</option>
-                            <option label="Liechtenstein" value="72">Liechtenstein</option>
-                            <option label="Lithuania" value="73">Lithuania</option>
-                            <option label="Luxembourg" value="74">Luxembourg</option>
-                            <option label="Macau" value="118">Macau</option>
-                            <option label="Macedonia" value="75">Macedonia</option>
-                            <option label="Madagascar" value="169">Madagascar</option>
-                            <option label="Malawi" value="170">Malawi</option>
-                            <option label="Malaysia" value="119">Malaysia</option>
-                            <option label="Maldives" value="120">Maldives</option>
-                            <option label="Mali" value="171">Mali</option>
-                            <option label="Malta" value="76">Malta</option>
-                            <option label="Marshall Islands" value="202">Marshall Islands</option>
-                            <option label="Martinique" value="21">Martinique</option>
-                            <option label="Mauritania" value="172">Mauritania</option>
-                            <option label="Mauritius" value="173">Mauritius</option>
-                            <option label="Mexico" value="22">Mexico</option>
-                            <option label="Micronesia" value="203">Micronesia</option>
-                            <option label="Moldova" value="77">Moldova</option>
-                            <option label="Monaco" value="78">Monaco</option>
-                            <option label="Mongolia" value="121">Mongolia</option>
-                            <option label="Montenegro" value="79">Montenegro</option>
-                            <option label="Montserrat" value="23">Montserrat</option>
-                            <option label="Morocco" value="174">Morocco</option>
-                            <option label="Mozambique" value="175">Mozambique</option>
-                            <option label="Myanmar(Burma)" value="122">Myanmar(Burma)</option>
-                            <option label="Namibia" value="176">Namibia</option>
-                            <option label="Nauru" value="204">Nauru</option>
-                            <option label="Nepal" value="123">Nepal</option>
-                            <option label="Netherlands" value="80">Netherlands</option>
-                            <option label="New Caledonia" value="205">New Caledonia</option>
-                            <option label="New Zealand" value="197">New Zealand</option>
-                            <option label="Nicaragua" value="24">Nicaragua</option>
-                            <option label="Niger" value="177">Niger</option>
-                            <option label="Nigeria" value="178">Nigeria</option>
-                            <option label="North Korea" value="124">North Korea</option>
-                            <option label="Northern Cyprus" value="411">Northern Cyprus</option>
-                            <option label="Northern Mariana Islands" value="414">Northern Mariana Islands</option>
-                            <option label="Norway" value="81">Norway</option>
-                            <option label="Oman" value="125">Oman</option>
-                            <option label="Pakistan" value="126">Pakistan</option>
-                            <option label="Palestine" value="228">Palestine</option>
-                            <option label="Panama" value="25">Panama</option>
-                            <option label="Papua New Guinea" value="206">Papua New Guinea</option>
-                            <option label="Paraguay" value="38">Paraguay</option>
-                            <option label="Peru" value="39">Peru</option>
-                            <option label="Philippines" value="127">Philippines</option>
-                            <option label="Poland" value="82">Poland</option>
-                            <option label="Portugal" value="83">Portugal</option>
-                            <option label="Puerto Rico" value="26">Puerto Rico</option>
-                            <option label="Qatar" value="128">Qatar</option>
-                            <option label="Republic of the Congo" value="152">Republic of the Congo</option>
-                            <option label="Reunion" value="179">Reunion</option>
-                            <option label="Romania" value="84">Romania</option>
-                            <option label="Russia" value="85">Russia</option>
-                            <option label="Rwanda" value="180">Rwanda</option>
-                            <option label="Saint Barthelemy" value="400">Saint Barthelemy</option>
-                            <option label="Saint Kitts and Nevis" value="413">Saint Kitts and Nevis</option>
-                            <option label="Saint Lucia" value="401">Saint Lucia</option>
-                            <option label="Samoa" value="207">Samoa</option>
-                            <option label="San Marino" value="86">San Marino</option>
-                            <option label="Sao Tome and Principe" value="181">Sao Tome and Principe</option>
-                            <option label="Saudi Arabia" value="129">Saudi Arabia</option>
-                            <option label="Senegal" value="182">Senegal</option>
-                            <option label="Serbia" value="87">Serbia</option>
-                            <option label="Seychelles" value="183">Seychelles</option>
-                            <option label="Sierra Leone" value="184">Sierra Leone</option>
-                            <option label="Singapore" value="130">Singapore</option>
-                            <option label="Slovakia" value="88">Slovakia</option>
-                            <option label="Slovenia" value="89">Slovenia</option>
-                            <option label="Solomon Islands" value="208">Solomon Islands</option>
-                            <option label="Somalia" value="185">Somalia</option>
-                            <option label="South Africa" value="186">South Africa</option>
-                            <option label="South Korea" value="131">South Korea</option>
-                            <option label="South Sudan" value="403">South Sudan</option>
-                            <option label="Spain" value="90">Spain</option>
-                            <option label="Sri Lanka" value="132">Sri Lanka</option>
-                            <option label="Sudan" value="187">Sudan</option>
-                            <option label="Suriname" value="40">Suriname</option>
-                            <option label="Swaziland" value="188">Swaziland</option>
-                            <option label="Sweden" value="91">Sweden</option>
-                            <option label="Switzerland" value="92">Switzerland</option>
-                            <option label="Syria" value="133">Syria</option>
-                            <option label="Taiwan" value="134">Taiwan</option>
-                            <option label="Tajikistan" value="135">Tajikistan</option>
-                            <option label="Tanzania" value="189">Tanzania</option>
-                            <option label="Thailand" value="136">Thailand</option>
-                            <option label="Togo" value="190">Togo</option>
-                            <option label="Tonga" value="209">Tonga</option>
-                            <option label="Trinidad and Tobago" value="27">Trinidad and Tobago</option>
-                            <option label="Tunisia" value="191">Tunisia</option>
-                            <option label="Turkey" value="93">Turkey</option>
-                            <option label="Turkmenistan" value="137">Turkmenistan</option>
-                            <option label="Turks and Caicos Islands" value="410">Turks and Caicos Islands</option>
-                            <option label="Tuvalu" value="210">Tuvalu</option>
-                            <option label="Uganda" value="192">Uganda</option>
-                            <option label="Ukraine" value="94">Ukraine</option>
-                            <option label="United Arab Emirates" value="138">United Arab Emirates</option>
-                            <option label="United Kingdom" value="95">United Kingdom</option>
-                            <option label="United States" value="1">United States</option>
-                            <option label="United States Virgin Islands" value="28">United States Virgin Islands
-                            </option>
-                            <option label="Uruguay" value="41">Uruguay</option>
-                            <option label="Uzbekistan" value="139">Uzbekistan</option>
-                            <option label="Vanuatu" value="211">Vanuatu</option>
-                            <option label="Vatican City" value="96">Vatican City</option>
-                            <option label="Venezuela" value="42">Venezuela</option>
-                            <option label="Vietnam" value="140">Vietnam</option>
-                            <option label="Wallis and Futuna" value="212">Wallis and Futuna</option>
-                            <option label="Western Sahara" value="193">Western Sahara</option>
-                            <option label="Yemen" value="141">Yemen</option>
-                            <option label="Zambia" value="194">Zambia</option>
-                            <option label="Zimbabwe" value="195">Zimbabwe</option>
 
-                        </select>
-                   
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label>City</label>
-                        <select name="sel_city" id="city"
-                            onfocus="javascript:checkCountry(document.forms['add_tour_form']);"
-                            onchange="getAreaListnew(document.forms['add_tour_form'],this.value);"
-                            class="select_width1 form-control form-control-sm selectpicker show-menu-arrow required bs-select-hidden"
-                            data-live-search-style="startsWith" data-live-search="true">
-                            <option value="0"> - Select City -</option>
 
-                        </select>
-                      
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label>Activity Name</label>
-                        <input class="add_width_fnt form-control form-control-sm required" type="text" name="txt_tour_name"
-                            id="txt_tour_name" size="45" maxlength="255" onblur="checkDuplicateTour(this.value,'add')">
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="form-group col-md-3">
-                        <label>Duration (Hrs - Mins)</label>
-                        <div class="form-group ">
-                            <select name="sel_hrs" id="sel_hrs"
-                                class="wdt93 select_width1 form-control form-control-sm selectpicker show-menu-arrow custDur required bs-select-hidden"
-                                data-live-search="true">
-                                <option value=""> - Hours -</option>
-                                <option value="0" selected="">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                            </select>
-                         
-                            <select name="sel_mins" id="sel_mins"
-                                class="wdt93 select_width1 form-control selectpicker show-menu-arrow custDur bs-select-hidden"
-                                data-live-search="true">
-                                <option value=""> - Minutes -</option>
-                                <option value="0">00</option>
-                                <option value="15">15</option>
-                                <option value="30">30</option>
-                                <option value="45">45</option>
-                            </select>
-                         
-                        </div>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label>Min. Pax :</label>
-                        <input class="form-control form-control-sm add_width_fnt required" type="text" name="txt_tour_min_pax"
-                            id="txt_tour_min_pax" size="3" maxlength="3" onkeyup="check_pax()">
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label>Max. Pax :</label>
-                        <input class="form-control form-control-sm add_width_fnt required" type="text" name="txt_tour_max_pax"
-                            id="txt_tour_max_pax" size="3" maxlength="3">
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="form-group col-md-5">
-                        <label class="MarginBt12">Selected Weekend Days</label><br>
-                        <div class="radioline1">
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Mo" name="chk_weekday[]" value="Mo">
-                            <label for="Mo">Mon</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Tu" name="chk_weekday[]" value="Tu">
-                            <label for="Tu">Tue</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="We" name="chk_weekday[]" value="We">
-                            <label for="We">Wed</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Th" name="chk_weekday[]" value="Th">
-                            <label for="Th">Thu</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Fr" name="chk_weekday[]" value="Fr">
-                            <label for="Fr">Fri</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Sa" name="chk_weekday[]" value="Sa">
-                            <label for="Sa">Sat</label>
-                        </div>&nbsp;&nbsp;
-                        <div class="checkbox checkbox-success checkbox-inline avalaible_days">
-                            <input type="checkbox" id="Su" name="chk_weekday[]" value="Su">
-                            <label for="Su">Sun</label>
-                        </div>&nbsp;&nbsp;
-                        </div>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label>Code :</label>
-                        <input class="form-control form-control-sm add_width_fnt" type="text" name="txt_tour_code" value=""
-                            id="txt_tour_code" "="">
-                </div>
-               </div>
-                            <div class=" row mt-2">
-                        <div class="form-group col-md-3">
-                            <label>Activity Type</label>
-                            <div class="form-group input-group col-xs-12">
-                                <select name="sel_tour_activity_type" id="sel_tour_activity_type"
-                                    class="required select_width1 form-control form-control-sm selectpicker show-menu-arrow bs-select-hidden"
-                                    data-live-search="true">
-                                    <option value="0"> - Select Activity Type -</option>
-                                    <option label="Activities" value="17">Activities</option>
-                                    <option label="Flight Ticket" value="22">Flight Ticket</option>
-                                    <option label="Food" value="20">Food</option>
-                                    <option label="Golf" value="23">Golf</option>
-                                    <option label="Insurance Premium Tax" value="24">Insurance Premium Tax</option>
-                                    <option label="Other" value="10">Other</option>
-                                    <option label="Tickets" value="11">Tickets</option>
-                                    <option label="Tour" value="19">Tour</option>
-                                    <option label="Transportation" value="18">Transportation</option>
-
-                                </select>
-                              
-                            </div>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>Activity Sub Type</label>
-                            <div class="form-group input-group col-xs-12">
-                                <select name="sel_tour_activity_sub_type" id="sel_tour_activity_subtype"
-                                    class="select_width1 form-control form-control-sm selectpicker show-menu-arrow bs-select-hidden"
-                                    data-live-search="true">
-                                    <option value="0"> - Select Activity Sub Type -</option>
-                                    <option label="gggg" value="11">gggg</option>
-
-                                </select>
-                               
-                                <span class="input-group-addon add_activity_type" id="activity_subtype">
-                                    <i class="fa fa-plus"></i>
-                                </span>
-                            </div>
-                            <div id="activity_subtype_add" style="display:none" class="paddT3 input-group col-xs-12">
-                                <input type="text" class="select_width1 form-control" name="activity_subtype_add"
-                                    id="activity_subtype_add_name">
-                                <span class="input-group-addon save_activity_type" id="activity_subtype_add_save"
-                                    value="Save">
-                                    <i class="fa fa-floppy-o"></i>
-                                </span>
-                                <span class="input-group-addon cancel_activity_type">
-                                    <i class="fa fa-times"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>Category</label>
-                            <div id="tour_category" class="form-group input-group col-xs-12">
-                                <select name="sel_tour_category" id="sel_tour_category"
-                                    class="select_width1 form-control form-control-sm selectpicker show-menu-arrow required bs-select-hidden"
-                                    data-live-search="true">
-                                    <option value="0"> - Select Activity Category -</option>
-                                    <option label="Adventure Trip" value="8">Adventure Trip</option>
-                                    <option label="bangkok dream world" value="2">bangkok dream world</option>
-                                    <option label="ferrari world" value="1">ferrari world</option>
-                                    <option label="Fishing" value="5">Fishing</option>
-                                    <option label="Monumant" value="4">Monumant</option>
-                                    <option label="Palace" value="7">Palace</option>
-                                    <option label="Religous" value="9">Religous</option>
-                                    <option label="Safari" value="6">Safari</option>
-                                    <option label="Shopping Mall" value="3">Shopping Mall</option>
-                                    <option label="vvvv" value="12">vvvv</option>
-
-                                </select>
-                             
-                                <span class="input-group-addon add_activity_type" id="activity_category">
-                                    <i class="fa fa-plus"></i>
-                                </span>
-                            </div>
-                            <div id="activity_category_add" style="display:none" class="paddT3 input-group col-xs-12">
-                                <input type="text" class="select_width1 form-control" name="add_category_name"
-                                    id="add_category_name">
-                                <span class="input-group-addon save_activity_type" id="activity_category_add_save"
-                                    value="Save">
-                                    <i class="fa fa-floppy-o"></i>
-                                </span>
-                                <span class="input-group-addon cancel_activity_type">
-                                    <i class="fa fa-times"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="form-group col-md-3">
-                            <label>Transfer Included</label><br>
-                            <div class="radioline1 mt-1">
-                            <div class=" radio radio-success radio-inline">
-                                <input type="radio" id="app" name="transfer_included" value="1"
-                                    onclick="javascript:document.getElementById(&quot;nearby_cities_body&quot;).style.display =&quot;block&quot;;getNearCityList(&quot;1&quot;,document.getElementById(&quot;country&quot;).value);">
-                                Yes
-                              
-                            </div>
-                            <div class="radio radio-success radio-inline">
-                                <input type="radio" id="app" name="transfer_included" value="0"
-                                    onclick="javascript:document.getElementById(&quot;nearby_cities_body&quot;).style.display =&quot;none&quot;;getNearCityList(&quot;0&quot;,document.getElementById(&quot;country&quot;).value);"
-                                    checked=""> No
-                               
-                            </div>
-                        </div>
-                        </div>
-                        <div id="nearby_cities_body" style="display: none;">
-                            <div class="form-group col-md-3">
-                                <div class="checkbox checkbox-success checkbox-inline">
-                                    <input id="chk_nearby_cities" type="checkbox" name="chk_nearby_cities" value="1"
-                                        onclick="show_multi_cities(this)">
-                                    <label for="chk_nearby_cities">Show Nearby Cities for Transfer</label>
-                                </div>
-                            </div>
-                            <div id="multi_cities_body" style="display: none;">
-                                <div class="form-group col-md-3">
-                                    <label>Nearby Cities</label><br>
-                                    <select name="multi_select_cities[]" id="multi_select_cities"
-                                        class="chzn-select selectpicker form-control show-menu-arrow bs-select-hidden"
-                                        multiple="" data-live-search="true" data-actions-box="true">
-                                        <option value="0"> - Select City -</option>
-
-                                    </select>
-                                    <div
-                                        class="btn-group bootstrap-select show-tick chzn-select form-control show-menu-arrow">
-                                        <button type="button" class="btn dropdown-toggle btn-default"
-                                            data-toggle="dropdown" data-id="multi_select_cities"
-                                            title="Nothing selected"><span class="filter-option pull-left">Nothing
-                                                selected</span>&nbsp;<span class="caret"></span></button>
-                                        <div class="dropdown-menu open">
-                                            <div class="bs-searchbox"><input type="text" class="form-control"
-                                                    autocomplete="off"></div>
-                                            <div class="bs-actionsbox">
-                                                <div class="btn-group btn-group-sm btn-block"><button type="button"
-                                                        class="actions-btn bs-select-all btn btn-default">Select
-                                                        All</button><button type="button"
-                                                        class="actions-btn bs-deselect-all btn btn-default">Deselect
-                                                        All</button></div>
-                                            </div>
-                                            <ul class="dropdown-menu inner" role="menu">
-                                                <li data-original-index="0"><a tabindex="0" class="" style=""
-                                                        data-tokens="null"><span class="text"> - Select City
-                                                            -</span><span
-                                                            class="glyphicon glyphicon-ok check-mark"></span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="form-group col-md-12">
-                            <label>Activity Highlights</label>
-                            <textarea class="select_width1 form-control form-control-sm" name="txtar_tour_hightlights" rows="4"
-                                cols="45"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Activity Description</label>
-                            <textarea class="select_width1 form-control form-control-sm txtarea_wdt_font_ht"
-                                name="txtar_tour_description" rows="5" cols="45"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Restriction</label>
-                            <textarea class="form-control form-control-sm" name="txt_tour_restriction" rows="4" cols="45"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Activity Details</label>
-                            <textarea name="txtar_tour_details" rows="4" cols="45"
-                                class="txtarea_wdt_font_ht select_width1 form-control form-control-sm"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Includes</label>
-                            <textarea name="txtar_inclusions" rows="4" cols="45"
-                                class="txtarea_wdt_font_ht select_width1 form-control"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Excludes</label>
-                            <textarea name="txtar_exclusions" rows="4" cols="45"
-                                class="txtarea_wdt_font_ht select_width1 form-control form-control-sm"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Terms and Conditions</label>
-                            <textarea name="txtar_termsncondn" rows="4" cols="45"
-                                class="txtarea_wdt_font_ht select_width1 form-control form-control-sm"></textarea>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Main Page Image</label>
-                            <span class="uniqFile input-group"><span
-                                    class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                        name="file_main_image" size="39" class="file_font"></span></span>
-                        </div>
-                        <div class="form-group col-md-12">
-                            <label>Other Images (Optional)</label>
-                            <div class="row">
-                                <div class="form-group col-md-2">
-                                    <label>Image 1</label>
-                                    <span class="uniqFile input-group"><span
-                                            class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                                name="file_image_1" size="39" class="file_font"></span></span>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label>Image 2</label>
-                                    <span class="uniqFile input-group"><span
-                                            class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                                name="file_image_2" size="39" class="file_font"></span></span>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label>Image 3</label>
-                                    <span class="uniqFile input-group"><span
-                                            class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                                name="file_image_3" size="39" class="file_font"></span></span>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label>Image 4</label>
-                                    <span class="uniqFile input-group"><span
-                                            class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                                name="file_image_4" size="39" class="file_font"></span></span>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label>Image 5</label>
-                                    <span class="uniqFile input-group"><span
-                                            class="input-group-addon fa fa-upload myInputFile"><input type="file"
-                                                name="file_image_5" size="39" class="file_font"></span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-12 mt-2">
-                            <button type="button" class="btn btn-dark btn-sm" name="b1" value="SUBMIT"
-                                onclick="Javascript: submit_form(document.forms['add_tour_form'],0,'add');">
-                              <i class="fa fa-check"></i>&nbsp;Submit
-                            </button>
-                            &nbsp;&nbsp;
-                            <button type="button" class="btn btn-dark btn-sm" name="b2" value="SAVE and Add Another"
-                                onclick="Javascript: submit_form(document.forms['add_tour_form'],1,'add');">
-                               <i class="fa fa-floppy-o"></i>&nbsp;Save and Add Another
-                            </button>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>Supplement Name</label>
+                            <input class="form-control form-control-sm" type="text" name="txt_area_name"
+                                id="txt_area_name" size="20" maxlength="50">
                         </div>
                     </div>
                 </div>
+                <br>
+                <div id="save_btn">
+                    <button type="button" name="b1" class="btn btn-dark btn-sm form-group" id="b1" value="SUBMIT"
+                        onclick="Javascript: submit_form(document.forms['add_area_form']);">
+                        <i class="fa fa-sear\"></i>&nbsp;&nbsp;Search
+                    </button>
+                </div>
+                <!-- <div id='save_loading' style='display:none'><img src='/cpfv3/images/ajax_pagination_loading.gif' alt=""></div> -->
+            </div>
+
+            <!-- Table Creation -->
+            <div class="panel-body removeMargins">
+                <div class="dataTables_scroll">
+
+                    <div class="row pd_tp">
+                        <div class="row mt-4">
+                            <div class="col-md-4 col_hide">
+                                <div class="form-group col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="col-md-6 col_hide">
+                                <!-- <div class="form-group"></div> -->
+                                &nbsp;
+                            </div>
+                            <div class="col-md-2">
+
+                                <script>
+                                    $(document).ready(function () {
+                                        $(".tablesearch").keyup(function () {
+                                            var searchTerm = $(".search_new").val();
+                                            var listItem = $('.table tbody').children('tr');
+                                            var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+                                            $.extend($.expr[':'], {
+                                                'containsi': function (elem, i, match, array) {
+                                                    return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+                                                }
+                                            });
+                                            $(".table tbody tr").not(":containsi('" + searchSplit + "')").each(function (e) {
+                                                $(this).attr('visible', 'false');
+                                            });
+                                            $(".table tbody tr:containsi('" + searchSplit + "')").each(function (e) {
+                                                $(this).attr('visible', 'true');
+                                            });
+                                            var jobCount = $('.table tbody tr[visible="true"]').length;
+                                            $('.counter').text(jobCount + ' item');
+                                            if (jobCount == '0') {
+                                                $('.no-result').show();
+                                            } else {
+                                                $('.no-result').hide();
+                                            }
+                                        });
+                                    });
+                                </script>
+
+                                <style>
+                                    .table tr[visible='false'],
+                                    .no-result {
+                                        display: none;
+                                        border: 1px solid #ddd;
+                                        padding: 10px;
+                                        margin-top: -2px;
+                                    }
+
+                                    .table tr[visible='true'] {
+                                        display: table-row;
+                                    }
+
+                                    .counter {
+                                        padding: 8px;
+                                        color: #ccc;
+                                    }
+
+                                    .search_new {
+                                        float: right;
+                                        height: 35px;
+                                        margin-bottom: 0px;
+                                        padding-left: 5px;
+                                    }
+                                </style>
+
+
+                                <div class="form-group col-md-2 new_search_icon"
+                                    style="text-align: right;padding-right: 0px;">
+                                    <h5><i class="pe-7s-search srchWithinPg" data-toggle="tooltip" data-placement="top"
+                                            data-original-title="Search within this table"></i></h5>
+                                </div>
+                                <div class="form-group col-md-10 bookingsrc">
+                                    <input type="text" class="tablesearch form-control form-control-sm search_new"
+                                        placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="search_sup_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                        <div class="row">
+                            <div class="col-sm-6"></div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="doubleScroll-scroll-wrapper" id="wrapper1"
+                                    style="height: 20px; overflow: scroll hidden; width: 1320px;">
+                                    <div class="suwala-doubleScroll-scroll" style="height: 20px; width: 1320px;"></div>
+                                </div>
+                                <div id="wrapper2" style="overflow: scroll hidden;">
+                                    <table id="search_suppliment"
+                                        class="table table-bordered table-striped table-hover table-responsive dataTable no-footer"
+                                        role="grid" aria-describedby="search_suppliment_info">
+
+                                        <thead>
+
+                                            <tr role="row">
+                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                    style="width: 860.2px;">Supplement Name</th>
+                                                <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                    style="width: 608px;">Action</th>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody>
+
+
+                                            <tr class="phps_row_1 odd" role="row">
+
+                                                <td>
+
+                                                    Internet Usage
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=1&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=1&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_0 even" role="row">
+
+                                                <td>
+
+                                                    Meal
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=2&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=2&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_1 odd" role="row">
+
+                                                <td>
+
+                                                    Breakfast
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=3&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=3&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_0 even" role="row">
+
+                                                <td>
+
+                                                    Tea
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=4&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=4&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_1 odd" role="row">
+
+                                                <td>
+
+                                                    Breakfast
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=5&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=5&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_0 even" role="row">
+
+                                                <td>
+
+                                                    Tea
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=6&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=6&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr class="phps_row_1 odd" role="row">
+
+                                                <td>
+
+                                                    Tea
+
+                                                </td>
+
+                                                <td class="actionlink">
+
+                                                    <div class="actionCont" style="width:58px">
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="supplement.php?action=edit&amp;sid=7&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next="
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit">
+
+                                                                <!--<img src="images/edit.gif" border=0 alt="Edit">-->
+
+                                                                <i class="fa fa-pencil-square-o"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                        <div class="input-group-addon">
+
+                                                            <a href="Javascript: confirm_delete('supplement.php?action=delete&amp;sid=7&amp;search=&amp;search_supplement_name=&amp;search_supplement_code=&amp;next=');"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Delete">
+
+                                                                <!--<img src="images/delete.gif" alt="Delete" border=0>-->
+
+                                                                <i class="fa fa-trash"></i>
+
+                                                            </a>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="dataTables_info" id="search_sup_info" role="status" aria-live="polite">
+                                    Showing 1
+                                    to 12 of 12 entries</div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group no-result">
+                        <h5 class="text-center">No Hotel Amenity found in the system.</h5>
+                    </div>
+
+                    <div class="row pd_tp">
+                        <div class="row">
+                            <div class="col-md-4 col_hide">
+                                <div class="form-group col-md-6 col_hide">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="col-md-5 col_hide">
+                                <div class="form-group"></div>
+                            </div>
+                            <div class="col-md-3 col_hide">
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </form>
+
 
         <!-- End -->
 
