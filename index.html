@@ -30,6 +30,8 @@
 </head>
 
 <body>
+  <div class="color-line">
+  </div>
 
   <!---                                    NAv BAr Secton            -->
   <section>
@@ -128,7 +130,7 @@
               <li><a class="dropdown-item"
                   href="menuitem.html">AGENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
-                <ul class="dropdown-menu dropdown-submenu" id="customerSub">
+                <ul class="dropdown-menu dropdown-submenu" id="agentsub">
                   <li><a class="dropdown-item" href="customeragentsearch.html">SEARCH</a></li>
                   <li><a class="dropdown-item" href="customeragentnew.html">NEW</a></li>
                   <li><a class="dropdown-item" href="customeragentsearchusers.html">SEARCH USERS</a></li>
@@ -600,7 +602,7 @@
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="marksub">
                   <li><a class="dropdown-item" href="MastersMarkupProfilesNew.html">NEW</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="MastersMarkupProfilesSearch.html">SEARCH</a></li>
                 </ul>
               </li>
               <li><a class="dropdown-item" href="menuitem.html">MARKET
@@ -621,38 +623,38 @@
                   href="menuitem.html">BANKS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="banksub">
-                  <li><a class="dropdown-item" href="#">NEW</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="MastersBankNew.html">NEW</a></li>
+                  <li><a class="dropdown-item" href="MastersBankSearch.html">SEARCH</a></li>
                 </ul>
               </li>
               <li><a class="dropdown-item"
                   href="menuitem.html">CURRENCIES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="cursub">
-                  <li><a class="dropdown-item" href="#">NEW</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="MastersCurrenciesNew.html">NEW</a></li>
+                  <li><a class="dropdown-item" href="MastersCurrenciesSearch.html">SEARCH</a></li>
                 </ul>
               </li>
               <li><a class="dropdown-item"
                   href="menuitem.html">TAXES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="taxsub">
-                  <li><a class="dropdown-item" href="#">NEW</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
-                  <li><a class="dropdown-item" href="#">TAX
+                  <li><a class="dropdown-item" href="MastersTaxesNew.html">NEW</a></li>
+                  <li><a class="dropdown-item" href="MastersTaxesSearch.html">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="menuitem.html">TAX
                       MASTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                         class="fa-solid fa-caret-right"></i></a>
                     <ul class="dropdown-menu dropdown-submenu" id="mappingsub">
-                      <li><a class="dropdown-item" href="#">ADD</a></li>
-                      <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                      <li><a class="dropdown-item" href="MastersTaxesTaxMasterNew.html">ADD</a></li>
+                      <li><a class="dropdown-item" href="MastersTaxesTaxMasterSearch.html">SEARCH</a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="#">TAX
+                  <li><a class="dropdown-item" href="menuitem.html">TAX
                       CONFIGURATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                         class="fa-solid fa-caret-right"></i></a>
                     <ul class="dropdown-menu dropdown-submenu" id="mappinggsub">
-                      <li><a class="dropdown-item" href="#">ADD</a></li>
-                      <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                      <li><a class="dropdown-item" href="MastersTaxesTaxConfigurationNew.html">ADD</a></li>
+                      <li><a class="dropdown-item" href="MastersTaxesTaxConfigurationSearch.html">SEARCH</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -660,8 +662,20 @@
               <li><a class="dropdown-item" href="menuitem.html">LOYALITY PROGRAM&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="loyaltysub">
-                  <li><a class="dropdown-item" href="#">TIERS</a></li>
-                  <li><a class="dropdown-item" href="#">REWARDS</a></li>
+                  <li><a class="dropdown-item" href="menuitem.html">TIERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-caret-right"></i></a>
+                    <ul class="dropdown-menu dropdown-submenu" id="agentsub">
+                      <li><a class="dropdown-item" href="MastersLoyalityProgramTiersNew.html">NEW</a></li>
+                      <li><a class="dropdown-item" href="MastersLoyalityProgramTiersSearch.html">SEARCH</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="menuitem.html">REWARDS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-caret-right"></i></a>
+                    <ul class="dropdown-menu dropdown-submenu" id="">
+                      <li><a class="dropdown-item" href="MastersLoyalityProgramRewardsNew.html">NEW</a></li>
+                      <li><a class="dropdown-item" href="MastersLoyalityProgramRewardsSearch.html">SEARCH</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li><a class="dropdown-item" href="Masters Packages.html">PACAKGES</a></li>
@@ -670,20 +684,20 @@
                   href="menuitem.html">VEHICLES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="vehiclesub">
-                  <li><a class="dropdown-item" href="#">VEHICLE
+                  <li><a class="dropdown-item" href="menuitem.html">VEHICLE
                       TYPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                         class="fa-solid fa-caret-right"></i></a>
                     <ul class="dropdown-menu dropdown-submenu" id="agentsub">
-                      <li><a class="dropdown-item" href="#">NEW</a></li>
-                      <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                      <li><a class="dropdown-item" href="MastersVehiclesVehicleTypeNew.html">NEW</a></li>
+                      <li><a class="dropdown-item" href="MastersVehiclesVehicleTypeSearch.html">SEARCH</a></li>
                     </ul>
                   </li>
                   <li><a class="dropdown-item"
-                      href="#">INVENTORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                      href="menuitem.html">INVENTORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                         class="fa-solid fa-caret-right"></i></a>
                     <ul class="dropdown-menu dropdown-submenu">
-                      <li><a class="dropdown-item" href="#">ADD</a></li>
-                      <li><a class="dropdown-item" href="#">MANAGE</a></li>
+                      <li><a class="dropdown-item" href="MastersVehiclesInventoryNew.html">ADD</a></li>
+                      <li><a class="dropdown-item" href="MastersVehiclesInventorySearch.html">MANAGE</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -703,23 +717,23 @@
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dripmenu">
               <li><a class="dropdown-item"
-                  href="#">CATEGORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                  href="VisaVisaCategorySearch.html">CATEGORY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="agentsub">
-                  <li><a class="dropdown-item" href="#">ADD</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH</a></li>
+                  <li><a class="dropdown-item" href="VisaVisaCategoryAdd.html">ADD</a></li>
+                  <li><a class="dropdown-item" href="VisaVisaCategorySearch.html">SEARCH</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">VISA REQUEST</a></li>
-              <li><a class="dropdown-item" href="#">VISA
+              <li><a class="dropdown-item" href="VisaVisaRequests.html">VISA REQUEST</a></li>
+              <li><a class="dropdown-item" href="menuitem.html">VISA
                   RATES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                     class="fa-solid fa-caret-right"></i></a>
                 <ul class="dropdown-menu dropdown-submenu" id="accountsub">
-                  <li><a class="dropdown-item" href="#">ADD SUPPLIER VISA RATES</a></li>
-                  <li><a class="dropdown-item" href="#">SEARCH SUPPLIER VISA RATESX</a></li>
+                  <li><a class="dropdown-item" href="VisaVisaRatesAddSupplierVisaRates .html">ADD SUPPLIER VISA RATES</a></li>
+                  <li><a class="dropdown-item" href="VisaVisaRatesSearchSupplierVisaRates .html">SEARCH SUPPLIER VISA RATESX</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">NEW OFFLINE VISA BOOKING</a></li>
+              <li><a class="dropdown-item" href="NewOfflneVisaBooking.html">NEW OFFLINE VISA BOOKING</a></li>
             </ul>
           </div>
 
@@ -1010,10 +1024,10 @@
   <!--    Panel Body        -->
 
 
-  <div class="container-fluid pt-0 p-4">
+  <div class="container-fluid pt-0 p-4"id="content-pad">
 
     <!-- First Row-->
-
+<form>
     <div class="row mt-2">
       <div class="form-group col-md-2">
         <label>Consultant</label>
@@ -1906,7 +1920,7 @@
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td><i class="fa-solid fa-taxi fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-taxi fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000013</td>
                   <td>0T13</td>
                   <td>
@@ -2042,7 +2056,7 @@
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2177,7 +2191,7 @@
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>
                     0T15
@@ -2315,7 +2329,7 @@
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2451,7 +2465,7 @@
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2586,7 +2600,7 @@
                 </tr>
                 <tr>
                   <td>6</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2722,7 +2736,7 @@
                 </tr>
                 <tr>
                   <td>7</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2857,7 +2871,7 @@
                 </tr>
                 <tr>
                   <td>8</td>
-                  <td><i class="fa-solid fa-taxi fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-taxi fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -2992,7 +3006,7 @@
                 </tr>
                 <tr>
                   <td>9</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3127,7 +3141,7 @@
                 </tr>
                 <tr>
                   <td>10</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3262,7 +3276,7 @@
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3397,7 +3411,7 @@
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td><i class="fa-sharp fa-solid fa-binoculars fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-sharp fa-solid fa-binoculars fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3532,7 +3546,7 @@
                 </tr>
                 <tr>
                   <td>13</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3667,7 +3681,7 @@
                 </tr>
                 <tr>
                   <td>14</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3802,7 +3816,7 @@
                 </tr>
                 <tr>
                   <td>15</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -3937,7 +3951,7 @@
                 </tr>
                 <tr>
                   <td>16</td>
-                  <td><i class="fa-solid fa-taxi fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-taxi fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4072,7 +4086,7 @@
                 </tr>
                 <tr>
                   <td>17</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4207,7 +4221,7 @@
                 </tr>
                 <tr>
                   <td>18</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4342,7 +4356,7 @@
                 </tr>
                 <tr>
                   <td>19</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4477,7 +4491,7 @@
                 </tr>
                 <tr>
                   <td>20</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4612,7 +4626,7 @@
                 </tr>
                 <tr>
                   <td>21</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4748,7 +4762,7 @@
                 </tr>
                 <tr>
                   <td>22</td>
-                  <td><i class="fa-solid fa-box-open fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-box-open fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -4883,7 +4897,7 @@
                 </tr>
                 <tr>
                   <td>23</td>
-                  <td><i class="fa-solid fa-taxi fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-taxi fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -5018,7 +5032,7 @@
                 </tr>
                 <tr>
                   <td>24</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -5153,7 +5167,7 @@
                 </tr>
                 <tr>
                   <td>25</td>
-                  <td><i class="fa-solid fa-bed fa-2xl" style="color:#6A6C6F;"></i></td>
+                  <td><i class="fa-solid fa-bed fa-xl" style="color:#6A6C6F;"></i></td>
                   <td>TD000014</td>
                   <td>0T14</td>
                   <td>
@@ -5317,6 +5331,7 @@
         </ul>
       </nav>
     </div>
+  </form>
 
 
     <!-- END -->

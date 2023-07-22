@@ -11,8 +11,31 @@
 body{
   margin: 0px !important;
   padding:0px !important;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: rgb(237,240,245)!important;
 }
-
+.color-line {
+  background: #f7f9fa;
+  height: 6px;
+  background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+  background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+  background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+  background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+  background-size: 100% 6px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+#content-pad{
+  padding: 2px 15px 50px 15px!important;
+ 
+}
+form{
+  background: white!important;
+  padding-left: 17px;
+  padding-top: 6px;
+  padding-bottom:25px;
+  padding-right: 30px;
+}
 
 .navbar {
   --bs-navbar-padding-y: -0.5rem !important;
@@ -31,6 +54,9 @@ body{
 
 .navbar-collapse {
   margin-right: 70px;
+}
+#firstNav{
+  background-color: rgb(255,255,255)!important;
 }
 
 #secondNav {
@@ -503,6 +529,11 @@ font-size: 12px;
 font-weight: 600;
 color:grey;
 }
+p{
+  font-size: 12px;
+  font-weight: 500;
+  color:grey;
+  }
 .col-md-3{
   font-size: 12px;
   font-weight: 600;
@@ -515,6 +546,7 @@ color:grey;
   color: grey;
   font-weight: 400;
 }
+
 .btn-dark {
   background-color: #34495e !important;
   border-color: #34495e !important;
@@ -799,6 +831,9 @@ input[type=checkbox]{
     }
     #secondNav{
       padding-left: 10px;
+    }
+    .color-line{
+      display: none;
     }
     
   }
