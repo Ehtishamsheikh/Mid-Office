@@ -1,13 +1,24 @@
-@font-face {
-  font-family: "glyphicons";
-  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
-  url("fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), 
-  url("fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), 
-  url("fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), 
-  url("fonts/bootstrap/glyphicons-halflings-regular.svg") format("svg");
-}
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+header,.form-group label,#firstNav,textarea{
+  font-family: "MONTSERRAT";
+}
+textarea{
+  font-size: 12px !important;
+    font-family: 'Montserrat'!important;
+}
+header span{
+  font-weight: normal;
+}
+p{
+  font-size: 11px!important;
+}
+::placeholder{
+  font-size: 12px;
+}
 body{
   margin: 0px !important;
   padding:0px !important;
@@ -26,7 +37,7 @@ body{
   background-repeat: no-repeat;
 }
 #content-pad{
-  padding: 2px 15px 50px 15px!important;
+  padding: 0px 15px 50px 15px!important;
  
 }
 form{
@@ -208,7 +219,7 @@ header {
 
   color:#6a6c6f;
   font-weight: 400;
-  padding: 7px 4px;
+  padding: 10px 4px 4px;
   transition: all .3s;
   border: 1px solid transparent;
   background-color: #edf0f5!important;
@@ -538,11 +549,29 @@ input[type="file"] {
   margin: 0px 10px 0px 10px;
 }
 .form-group label{
-font-size: 12px;
+font-size: 11px;
 font-weight: 600;
 color:grey;
 margin-bottom: 6px;
 }
+textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #eee;
+  opacity: 1;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #e4e5e7 !important;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.nav-tabs li.active a {
+  background-color: #337AB7;
+  color: #fff;
+}
+
 p{
   font-size: 12px;
   font-weight: 500;
@@ -582,16 +611,18 @@ label h5{
 }
 .checkbox label{
   padding-left: 5px;
-  vertical-align: 2px;
+  vertical-align: 4px;
   position: relative;
  
 }
 .radio label{
-  padding-left: 5px;
-  vertical-align: 2px;
+  padding-left: 3px;
+  vertical-align: 4px;
   position: relative;
 }
-
+.card{
+  border-radius: 0!important;
+}
 
 .btn-dark:hover {
   background-color: #3f5872 !important;
@@ -604,6 +635,15 @@ label h5{
   border-left: 2px solid red!important;
   border-radius: 0px 4px 4px 0px;
 }
+input.required{
+  border-left: 2px solid red!important;
+  border-radius: 0px 4px 4px 0px;
+}
+textarea.required{
+  border-left: 2px solid red!important;
+  border-radius: 0px 4px 4px 0px;
+}
+
 .fa-times-circle.fa-xs {
   color: #6a7490 !important;
   vertical-align: -2px;
@@ -621,6 +661,7 @@ label h5{
   background-color: beige!important;
   outline: 0;
   box-shadow:none!important;
+  border-color: #d5d5d5!important;
 }
 
 
@@ -862,6 +903,16 @@ input[type=checkbox]{
   color: #197ef7 !important;
   font-size: 13px !important;}
 
+
+  kbd {
+    padding: 2px 4px !important;
+    font-size: 12px !important;
+    color: #fff !important;
+    background-color: #333 !important;
+    border-radius: 3px !important;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25) !important;
+}
 
 @media only screen and (min-width:960px) {
   #tdotext{
