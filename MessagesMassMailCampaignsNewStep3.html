@@ -26,6 +26,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+            <!-- include summernote css/js-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <title>Travel Destination Online</title>
 </head>
 
@@ -167,58 +170,69 @@
                         </ul>
                     </div>
 
-     <!--  Drop down menu for Messages-->
+                    <!--  Drop down menu for Messages-->
 
 
-     <div class="dropdown" id="drip">
-        <a class="boxview dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <b>MESSAGES</b>
-        </a>
+                    <div class="dropdown" id="drip">
+                        <a class="boxview dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>MESSAGES</b>
+                        </a>
 
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dripmenu">
-          <li><a class="dropdown-item" href="menuitem.html">AGENT
-              MESSAGES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-right"></i></a>
-            <ul class="dropdown-menu dropdown-submenu" id="agentsub">
-              <li><a class="dropdown-item" href="MessagesAgentMessagesNew.html">NEW</a></li>
-              <li><a class="dropdown-item" href="MessagesAgentMessagesInbox.html">INBOX</a></li>
-              <li><a class="dropdown-item" href="MessagesAgentMessagesOutbox.html">OUTBOX</a></li>
-            </ul>
-          </li>
-          <li><a class="dropdown-item" href="menuitem.html">MASS
-              MAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                class="fa-solid fa-caret-right"></i></a>
-            <ul class="dropdown-menu dropdown-submenu">
-              <li><a class="dropdown-item"
-                  href="menuitem.html">SUBSCRIBERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                    class="fa-solid fa-caret-right"></i></a>
-                <ul class="dropdown-menu dropdown-submenu" id="agentsub">
-                  <li><a class="dropdown-item" href="MessagesMassMailSubscribersNew.html">NEW</a></li>
-                  <li><a class="dropdown-item" href="MessagesMassMailSubscribersSearch.html">SEARCH</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="menuitem.html">SUBSCRIBERS
-                  GROUPS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-right"></i></a>
-                <ul class="dropdown-menu dropdown-submenu" id="subscribersub">
-                  <li><a class="dropdown-item" href="MessagesMassMailSubscribersGroupNew.html">NEW</a></li>
-                  <li><a class="dropdown-item" href="MessagesMassMailSubscribersGroupsSearch.html">SEARCH</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item"
-                  href="menuitem.html">CAMPAIGNS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                    class="fa-solid fa-caret-right"></i></a>
-                <ul class="dropdown-menu dropdown-submenu" id="mappingsub">
-                  <li><a class="dropdown-item" href="MessagesMassMailCampaignsNew.html">NEW</a></li>
-                  <li><a class="dropdown-item" href="MessagesMassMailCampaignsSearch.html">SEARCH</a></li>
-                  <li><a class="dropdown-item" href="menuitem1.html">DOWNLOAD NEWSLETTER</a></li>
-                  <li><a class="dropdown-item" href="MessagesMassMailCampaignsAnalysis.html">ANALYSIS</a></li>
-                  <li><a class="dropdown-item" href="MessagesMassMailCampaignsSettings.html">SETTINGS</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dripmenu">
+                            <li><a class="dropdown-item" href="menuitem.html">AGENT
+                                    MESSAGES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        class="fa-solid fa-caret-right"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu" id="agentsub">
+                                    <li><a class="dropdown-item" href="MessagesAgentMessagesNew.html">NEW</a></li>
+                                    <li><a class="dropdown-item" href="MessagesAgentMessagesInbox.html">INBOX</a></li>
+                                    <li><a class="dropdown-item" href="MessagesAgentMessagesOutbox.html">OUTBOX</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="menuitem.html">MASS
+                                    MAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        class="fa-solid fa-caret-right"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li><a class="dropdown-item"
+                                            href="menuitem.html">SUBSCRIBERS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa-solid fa-caret-right"></i></a>
+                                        <ul class="dropdown-menu dropdown-submenu" id="agentsub">
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailSubscribersNew.html">NEW</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailSubscribersSearch.html">SEARCH</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="menuitem.html">SUBSCRIBERS
+                                            GROUPS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa-solid fa-caret-right"></i></a>
+                                        <ul class="dropdown-menu dropdown-submenu" id="subscribersub">
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailSubscribersGroupNew.html">NEW</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailSubscribersGroupsSearch.html">SEARCH</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="menuitem.html">CAMPAIGNS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                                class="fa-solid fa-caret-right"></i></a>
+                                        <ul class="dropdown-menu dropdown-submenu" id="mappingsub">
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailCampaignsNew.html">NEW</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailCampaignsSearch.html">SEARCH</a></li>
+                                            <li><a class="dropdown-item" href="menuitem1.html">DOWNLOAD NEWSLETTER</a>
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailCampaignsAnalysis.html">ANALYSIS</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="MessagesMassMailCampaignsSettings.html">SETTINGS</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
 
                     <!--  Drop down menu for Accounts-->
@@ -1123,16 +1137,14 @@
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">SUBSCRIBER SEARCH CRITERIA</h5>
+                    <h5 style="font-size:14pt;font-weight: 500;">STEP 3 : ADD CONTENT</h5>
                 </div>
                 <div class="col-md-6">
 
                 </div>
                 <div class="col-md-3">
-                    <i class="fa-solid fa-house-chimney"></i><span> / List Subscribers / <a
-                            href="MessagesMassMailSubscribersGroupNew.html"><button class="btn btn-dark btn-sm"
-                                style="font-size:12px;">
-                                Add Subscriber</button></a></span>
+                    <i class="fa-solid fa-house-chimney"></i><span> /<a href="MessagesMassMailCampaignsSearch.html"
+                            style="text-decoration:none;color:grey"> Campaigns</a> / Add Campaign</span>
                 </div>
 
             </div>
@@ -1145,318 +1157,92 @@
     <div class="container-fluid pt-0 p-4" id="content-pad">
 
         <!-- First Row-->
+        <div class="panel-footer" style="background-color: #f5f5f5;">
+
+            <style type="text/css">
+                .steps {
+                    display: inline-block;
+                }
+            </style>
+
+            <div class="text-center">
+                <a href="MessagesMassMailCampaignsNew.html">
+                    <div class="btn btn-default btn-sm steps">Step 1 : Add Name Campaign </div>
+                </a>
+                <a href="MessagesMassMailCampaignsNewStep2.html">
+                    <div class="btn btn-default btn-sm steps">Step 2 : Add Setup</div>
+                </a>
+                <a href="MessagesMassMailCampaignsNewStep3.html">
+                    <div class="steps btn btn-dark btn-sm">Step 3 : Add Content</div>
+                </a>
+                <a href="MessagesMassMailCampaignsNewStep4.html">
+                    <div class="steps btn btn-default btn-sm">Step 4 : Preview</div>
+                </a>
+                <a href="MessagesMassMailCampaignsNewStep5.html">
+                    <div class="steps btn btn-default btn-sm">Step 5 : Schedule</div>
+                </a>
+
+            </div>
+            <br>
+        </div>
 
         <form>
+
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-3 form-group">
-                        <label>Subscriber Group Name</label> <input class="form-control  form-control-sm test123"
-                            type="textbox" name="name_search" value="">
+
+                    <div class="col-md-12 form-group  phps_row_0">
+                        <label>Please choose one of the below option for message :</label><br><p>To add dynamic User Name
+                        in the content, use "###SUBSCRIBER_NAME###" in your below HTML area where you want to show.</p>
                     </div>
-                    <div class="col-md-3 form-group">
-                        <label>From Name</label> <input class="form-control form-control-sm" type="textbox"
-                            name="from_name_search" value="">
+                    <div class="col-md-12 form-group phps_row_1 ">
+
+                        <div class="radio radio-success radio-inline">
+                            <input type="radio" name="content_type[]" id="content_type_message" value="1"
+                                class="test123">
+                            <label for="content_type_message">Image and Text</label>
+                        </div>
+                        <textarea id="summernote" class="form-control form-control-sm"></textarea>
+          
+                     
+
                     </div>
-                    <div class="col-md-3 form-group">
-                        <label>Reply-to Email</label> <input class="form-control form-control-sm" type="textbox"
-                            name="reply_to_search" value="">
+                    <div class="col-md-12 form-group  phps_row_0 mt-2">
+                        <div class="radio radio-success radio-inline">
+                            <input type="radio" name="content_type[]" id="content_type_up_image" value="2">
+                            <label for="content_type_up_image">Upload Image</label>
+                        </div>
+                        <span class="uniqFile input-group"><span
+                                class="input-group-addon fa fa-upload myInputFile"><input type="file" name="file_up"
+                                    id="file_up"></span></span>
                     </div>
-                </div>
-                <br>
-                <div class="col-md-12 form-group">
-                    <button type="button" class="btn btn-dark btn-sm" name="submit1" value="Search"
-                        onclick="callmesubmit();">
-                        <i class="fa fa-search"></i> &nbsp;Search
 
-                    </button>
-                </div>
-            </div>
-
-
-
-
-        </form>
-
-
-        <br>
-        <form>
-            <div class="panel-body removeMargins">
-                <div class="dataTables_scroll">
-
-
-                    <div class="row pd_tp">
-                        <div class="row">
-                            <div class="col-md-5 col_hide">
-                                <div class="form-group col-md-12">
-                                    &nbsp;
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <div class="custPaging pgType2">
-                                        <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                                            class="custPaging  pgType2">
-                                            <tbody>
-                                                <tr>
-                                                    <td align="center" width="70%"></td>
-                                                    <td align="right" width="30%"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 search_option">
-
-                                <script>
-                                    $(document).ready(function () {
-                                        $(".tablesearch").keyup(function () {
-                                            var searchTerm = $(".search_new").val();
-                                            var listItem = $('.table tbody').children('tr');
-                                            var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
-                                            $.extend($.expr[':'], {
-                                                'containsi': function (elem, i, match, array) {
-                                                    return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
-                                                }
-                                            });
-                                            $(".table tbody tr").not(":containsi('" + searchSplit + "')").each(function (e) {
-                                                $(this).attr('visible', 'false');
-                                            });
-                                            $(".table tbody tr:containsi('" + searchSplit + "')").each(function (e) {
-                                                $(this).attr('visible', 'true');
-                                            });
-                                            var jobCount = $('.table tbody tr[visible="true"]').length;
-                                            $('.counter').text(jobCount + ' item');
-                                            if (jobCount == '0') {
-                                                $('.no-result').show();
-                                            } else {
-                                                $('.no-result').hide();
-                                            }
-                                        });
-                                    });
-                                </script>
-
-                                <style>
-                                    .table tr[visible='false'],
-                                    .no-result {
-                                        display: none;
-                                        border: 1px solid #ddd;
-                                        padding: 10px;
-                                        margin-top: -2px;
-                                    }
-
-                                    .table tr[visible='true'] {
-                                        display: table-row;
-                                    }
-
-                                    .counter {
-                                        padding: 8px;
-                                        color: #ccc;
-                                    }
-
-                                    .search_new {
-                                        float: right;
-                                        height: 35px;
-                                        margin-bottom: 0px;
-                                        padding-left: 5px;
-                                    }
-                                </style>
-
-
-                                <div class="form-group col-md-2 new_search_icon"
-                                    style="text-align: right;padding-right: 0px;">
-                                    <h5><i class="pe-7s-search srchWithinPg" data-toggle="tooltip" data-placement="top"
-                                            data-original-title="Search within this table"></i></h5>
-                                </div>
-                                <div class="form-group col-md-10 bookingsrc">
-                                    <input type="text" class="tablesearch form-control form-control-sm search_new"
-                                        placeholder="Search">
-                                </div>
+                    <div class="col-md-12 form-group phps_row_1 mt-2 ">
+                        <div class="col-md-3 row">
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" name="content_type[]" id="content_type_choose_image" value="3"
+                                    onclick="javascript:add_modal();" title="Choose an Image" data-toggle="modal"
+                                    data-target="#myModal1">
+                                <label for="content_type_choose_image">Choose an Image</label>
                             </div>
                         </div>
                     </div>
-
-
-
-                    <div class="row mt-2">
-                        <div class="col-sm-12">
-                            <div class="doubleScroll-scroll-wrapper" id="wrapper1"
-                                style="height: 20px; overflow: scroll hidden; width: 1320px;">
-                                <div class="suwala-doubleScroll-scroll" style="height: 20px; width: 1320px;"></div>
-                            </div>
-                            <div id="wrapper2" style="overflow: scroll hidden;">
-                                <table id="search_sup"
-                                    class="table table-bordered table-striped table-hover table-responsive dataTable no-footer"
-                                    role="grid" aria-describedby="search_sup_info">
-                                    <thead>
-                                        <tr role="row">
-                                            <th class="sorting" tabindex="0" aria-controls="search_sup" rowspan="1"
-                                                colspan="1" aria-label="Subscriber Group Name 
-                                                    
-                                             
-                                                    
-                                            
-                                            : activate to sort column ascending" style="width: 344.2px;">Subscriber
-                                                Group Name <a
-                                                    href="subscriber_list.php?sort_by=name&amp;direction=up&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/up_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a> <a
-                                                    href="subscriber_list.php?sort_by=name&amp;direction=down&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/down_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a>
-                                            </th>
-                                            <th class="sorting" tabindex="0" aria-controls="search_sup" rowspan="1"
-                                                colspan="1" aria-label="From Name 
-                                                    
-                                             
-                                                    
-                                            
-                                            : activate to sort column ascending" style="width: 176.2px;">From Name <a
-                                                    href="subscriber_list.php?sort_by=from_name&amp;direction=up&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/up_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a> <a
-                                                    href="subscriber_list.php?sort_by=from_name&amp;direction=down&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/down_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a>
-                                            </th>
-                                            <th class="sorting" tabindex="0" aria-controls="search_sup" rowspan="1"
-                                                colspan="1" aria-label="Reply-to Email 
-                                                    
-                                             
-                                                    
-                                            
-                                            : activate to sort column ascending" style="width: 470.2px;">Reply-to Email
-                                                <a
-                                                    href="subscriber_list.php?sort_by=reply_to_email&amp;direction=up&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/up_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a> <a
-                                                    href="subscriber_list.php?sort_by=reply_to_email&amp;direction=down&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                    <img src="images/down_arrow.gif" alt="" border="0" height="5"
-                                                        width="9">
-                                                </a>
-                                            </th>
-                                            <th class="no-sort sorting_disabled" rowspan="1" colspan="1"
-                                                aria-label="Created On" style="width: 163.2px;">Created On</th>
-                                            <th class="no-sort sorting_disabled" rowspan="1" colspan="1"
-                                                aria-label="Actions" style="width: 246px;">Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-
-                                        <tr class="phps_row_1 odd" role="row">
-                                            <td>Qtech Profile<br>1
-                                                Subscribers
-                                            </td>
-                                            <td>Greetings</td>
-                                            <td>nida.ansari@qtechsoftware.com</td>
-                                            <!--td>2016-05-06 04:17:29</td-->
-                                            <td align="center">
-                                                <!--18-Sep-2015 15:48:43 -->
-                                                <div class="dateWrapper withTime" style="margin-top: 17px">
-                                                    <div class="onlyDate">06</div>
-                                                    <div class="monthYear">
-                                                        May<br>
-                                                        2016
-                                                    </div>
-                                                </div>
-                                                <div class="secCont">04:17</div>
-                                            </td>
-                                            <td class="actionlink">
-                                                <div class="actionCont">
-                                                    <div class="input-group-addon">
-                                                        <a
-                                                            href="subscriber_list.php?action=edit&amp;id=1&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                            <!-- <img src="images/edit.gif" border=0 data-toggle="tooltip" data-placement="top" alt="Edit" title="Edit"> -->
-                                                            <i class="fa fa-pencil-square-o" data-toggle="tooltip"
-                                                                data-placement="top" title=""
-                                                                data-original-title="Edit"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a
-                                                            href="subscriber_list.php?action=view&amp;id=1&amp;name_search=&amp;from_name_search=&amp;reply_to_search=">
-                                                            <!-- <img src="images/view.gif" border=0 data-toggle="tooltip" data-placement="top" alt="View" title="View"> -->
-                                                            <i class="fa fa-eye" data-toggle="tooltip"
-                                                                data-placement="top" alt="View" title=""
-                                                                data-original-title="View"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="subscribers.php?sub_list_search=1">
-                                                            <!-- <img src="images/managelist.gif" border=0 data-toggle="tooltip" data-placement="top" alt="Manage List" title="Manage List"> -->
-                                                            <i class="fa fa-list" data-toggle="tooltip"
-                                                                data-placement="top" alt="Manage List" title=""
-                                                                data-original-title="Manage List"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div id="div_plus_1" class="input-group-addon" data-toggle="modal"
-                                                        data-target="#div_detail_1">
-                                                        <a data-toggle="tooltip" data-placement="top"
-                                                            alt="Add Duplicate List" title=""
-                                                            onclick="javascript:getSubscriberList('1'); document.getElementById('div_detail_1').style.display = 'block';"
-                                                            style="cursor: pointer;"
-                                                            data-original-title="Add Duplicate List">
-                                                            <i class="fa fa-files-o"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="subscribers.php?action=add&amp;sub_list_search=1">
-                                                            <i class="fa fa-plus" data-toggle="tooltip"
-                                                                data-placement="top" alt="Add Addresses" title=""
-                                                                data-original-title="Add Addresses"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a
-                                                            href="subscriber_list.php?action=import_csv&amp;sub_list_search=1">
-                                                            <i class="fa fa-file-text" data-toggle="tooltip"
-                                                                data-placement="top" alt="Import to CSV" title=""
-                                                                data-original-title="Import to CSV"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="javascript:confirm_delete('delete','1');">
-                                                            <i class="fa fa-trash" data-toggle="tooltip"
-                                                                data-placement="top" alt="Delete" title=""
-                                                                data-original-title="Delete"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <table cellspacing="0" width="100%" align="center" border="0">
-                                                    <tbody>
-                                                        <tr>
-
-                                                        </tr>
-                                                    </tbody>
-                                                </table> <!-- modal box to show duplicate list -->
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
                     <br>
+                    <div class="col-md-3 form-group  phps_row_0">
 
+                        <button type="button" class="btn btn-dark btn-sm" name="add" value="SAVE" tabindex="6"
+                            onclick="return validate_content(document.forms['frm_add_content'],'html');">
+                         
+                                <i class="fa fa-floppy-o"></i>
+                                &nbsp;Save
+                       
+                        </button>
 
-
-
-
+                    </div>
                 </div>
             </div>
+
+
         </form>
 
 
@@ -1465,136 +1251,28 @@
 
 
     </div>
+    <script>
+        $('#summernote').summernote({
+          height: 80,
+       
+        toolbar: [
+        ['style', ['style']],
+          ['font', ['bold','italic','underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['height', ['height']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+      </script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/bootstrap-select.js"></script>
 
-<script type="text/javascript">
-    var wrapper1 = document.getElementById('wrapper1');
-    var wrapper2 = document.getElementById('wrapper2');
-    wrapper1.onscroll = function () {
-        wrapper2.scrollLeft = wrapper1.scrollLeft;
-    };
-    wrapper2.onscroll = function () {
-        wrapper1.scrollLeft = wrapper2.scrollLeft;
-    };
-</script>
 
-<script>
-    function move_subscribers(flag) {
-        var prev_flag = document.getElementById('flag').value;
-        var cur_sub_list_id;
-
-        cur_sub_list_id = document.getElementById('sub_list_search').value;
-
-        document.getElementById('flag').value = flag;
-        if (flag == 1)
-            document.getElementById('title').innerHTML = "";
-        else
-            document.getElementById('title').innerHTML = "";
-        document.getElementById('div_move').style.display = 'block';
-        document.getElementById('move_loading').style.display = 'block';
-        if (prev_flag != "")
-            document.getElementById('move_dataButton_' + prev_flag).style.display = 'none';
-        document.getElementById('move_dataButton_' + flag).style.display = 'none';
-        document.getElementById('move_datadisplay').innerHTML = '';
-
-        ajax_get.requestFile = 'newsletter/movesubscriber.php?&action=display&flag=' + flag + '&cur_sub_list_id=' + cur_sub_list_id;	// Specifying which file to get
-        ajax_get.onCompletion = Subscriber;// Specify function that will be executed after file has been found
-        ajax_get.runAJAX();		// Execute AJAX function
-
-    }
-    function Subscriber() {
-        var flag;
-        flag = document.getElementById('flag').value;
-        document.getElementById('move_loading').style.display = 'none';
-        document.getElementById('move_dataButton_' + flag).style.display = 'block';
-        document.getElementById('move_datadisplay').innerHTML = '';
-        var dataset = '';
-        dataset += '';
-        document.getElementById('move_datadisplay').innerHTML = ajax_get.response;
-        $("#sub_list_id").selectpicker('refresh');
-    }
-    function add_subscribers_to_list(type) {
-        var flag = document.getElementById('flag').value;
-        var sub_list_name;
-        var sub_list_id;
-        var cur_sub_list_id;
-
-        cur_sub_list_id = document.getElementById('sub_list_search').value;
-        document.getElementById('move_loading').style.display = 'block';
-        document.getElementById('type').value = type;
-
-        if (flag == 1)
-            sub_list_id = document.getElementById('sub_list_id').value;
-        else if (flag == 2)
-            sub_list_name = document.getElementById('txt_list_name').value;
-
-        var cboxes = document.getElementsByName('email[]');
-        var ids = "";
-        var len = cboxes.length;
-        for (var i = 0; i < len; i++) {
-            if (cboxes[i].checked) {
-                id = cboxes[i].id;
-                my_id = id.split("_");
-                if (ids == "")
-                    ids += my_id[1];
-                else
-                    ids += ", " + my_id[1];
-            }
-        }
-
-        ajax.requestFile = 'newsletter/movesubscriber.php?action=insert&type=' + type + '&flag=' + flag + '&subscriber_ids=' + ids + '&sub_list_name=' + sub_list_name + '&sub_list_id=' + sub_list_id + '&cur_sub_list_id=' + cur_sub_list_id;
-        ajax.onCompletion = regenerateSubscriber;	// Specify function that will be executed after file has been found
-        ajax.runAJAX();	// Execute AJAX function
-
-    }
-    function regenerateSubscriber() {
-
-        ReturnMsg = ajax.response;	// Executing the response from Ajax as Javascript code
-        flag = document.getElementById('flag').value;
-        type = document.getElementById('type').value;
-        document.getElementById('move_loading').style.display = 'none';
-
-        if (ReturnMsg == "0") {
-            document.getElementById('div_move').style.display = 'none';
-            if (flag == 2) {
-                $message = 'Subscriber List Created Successfully';
-            } else {
-                if (type == 1) {
-                    $message = 'Subscriber(s) moved Successfully';
-                } else {
-                    $message = 'Subscriber(s) copied Successfully';
-                }
-            }
-        }
-    }
-    var checkselAll = false;
-    function checkAll() {
-
-        var boxes = search_sup.getElementsByTagName("input");
-        if (checkselAll == false) {
-            for (var i = 0; i < boxes.length; i++) {
-                myType = boxes[i].getAttribute("type");
-                if (myType == "checkbox") {
-                    boxes[i].checked = 1;
-                }
-            }
-            checkselAll = true;
-        }
-        else {
-            for (var i = 0; i < boxes.length; i++) {
-                myType = boxes[i].getAttribute("type");
-                if (myType == "checkbox") {
-                    boxes[i].checked = 0;
-                }
-            }
-            checkselAll = false;
-        }
-    }
-
-</script>
 
 </html>
