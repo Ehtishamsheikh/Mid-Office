@@ -1134,16 +1134,14 @@
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">VIEW USER DETAILS</h5>
+                    <h5 style="font-size:14pt;font-weight: 500;">CREDIT LOG</h5>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
 
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-md-3">
                     <i class="fa-solid fa-house-chimney"></i><span> / <a href="customeragentsearchbutton.html"
-                            style="text-decoration:none;color:grey"> Search Agents</a> / View User</span>
-
+                            style="text-decoration:none;color:grey"> Search Agent</a> / Credit Log</span>
                 </div>
 
             </div>
@@ -1156,32 +1154,34 @@
     <div class="container-fluid pt-0 p-4" id="content-pad">
 
         <!-- First Row-->
+
+
+
+
+        <div class="panel-body" style="background-color: #337ab7;padding-bottom: 1px; padding-top: 4px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: white !important;font-size:15px;
+                                margin-left: 20px;">CA0319 / Shiv Travels / Shiv Chauhan / Active</h5>
+                </div>
+            </div>
+        </div>
         <form>
+            <div class="panel-body removeMargins">
+                <div class="dataTables_scroll form-group">
 
-            <div class="panel-body form-group removeMargins">
-                <div class="dataTables_scroll">
-                    <div id="mesID" style="display: none;">
+                    <div id="search_transfer_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                        <div class="row mt-2">
+                            <div class="col-sm-10">
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                           <a href="customeradduserdetails.html"><button type="button" name="Add" value="Add Sub User" class="btn btn-dark btn-sm topBtn"
-                                onclick="javascript:window.location.href='sub_agent.php?action=add&amp;parent_agent=319&amp;consultant=&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search='">
-                                <i class="fa fa-plus"></i>&nbsp;Add User
-                            </button></a>
-                        </div>
-                    </div>
-
-                    <div id="search_sup_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                        <div class="row">
-                            <div class="col-sm-10"></div>
+                            </div>
                             <div class="col-sm-2">
-                                <div id="search_sup_filter" class="dataTables_filter"><label>
+                                <div id="search_transfer_filter" class="dataTables_filter"><label>
                                         <h5 style="display:inline"><i class="pe-7s-search srchWithinPg"
                                                 data-toggle="tooltip" data-placement="top"
                                                 data-original-title="Search within this table"></i></h5><input
-                                            type="search" class="form-control form-control-sm input-sm" placeholder=""
-                                            aria-controls="search_sup">
+                                            type="search" class="form-control form-control-sm input-sm test123"
+                                            placeholder="" aria-controls="search_transfer">
                                     </label></div>
                             </div>
                         </div>
@@ -1197,91 +1197,82 @@
                                         role="grid" aria-describedby="search_sup_info">
                                         <thead>
                                             <tr role="row">
-                                                <th class="phps_header sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 219.2px;">&nbsp;Agent Code</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 249.2px;">&nbsp;Agency Name</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 199.2px;">&nbsp;Username</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 297.2px;">&nbsp;Contact Person</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 157.2px;">&nbsp;Status</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 312px;">&nbsp;Actions</th>
+                                                <th style="text-align: center; width: 83.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Credit Limit</th>
+                                                <th style="text-align: center; width: 89.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Credit Value</th>
+                                                <th style="text-align: center; width: 56.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Amount</th>
+                                                <th style="text-align: center; width: 161.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Calculate Credit Value</th>
+                                                <th style="text-align: center; width: 99.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Credit Usages</th>
+                                                <th style="text-align: center; width: 74.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Booking ID</th>
+                                                <th style="text-align: center; width: 193.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Log Type</th>
+                                                <th style="text-align: center; width: 153.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Temp Credit Available </th>
+                                                <th style="text-align: center; width: 166.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Temp Credit Expiry Date</th>
+                                                <th style="text-align: center; width: 193.2px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Note</th>
+                                                <th style="text-align: center; width: 84px;" class="sorting_disabled"
+                                                    rowspan="1" colspan="1">Create Date</th>
                                             </tr>
-
                                         </thead>
                                         <tbody>
 
 
 
-                                            <tr class="phps_row_1 odd" role="row">
-                                                <td>
-                                                    &nbsp;CA0320
-                                                </td>
-                                                <td>
-                                                    &nbsp;travel
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed&nbsp;&nbsp;Ali
-                                                </td>
-                                                <td>
-                                                    <h5><span class="tdd_label label-success">Active</span></h5>
-                                                </td>
-                                                <td class="actionlink">
-                                                    <div class="actionCont">
-                                                        <div class="input-group-addon">
-                                                            <a href="CustomersEditUserDetails.html"
-                                                                alt="Edit" title="Edit"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a href="customerviewuserdetailsdeactivate.html"
-                                                                title="Click To Deactivate"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-check-circle"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a onclick="Javacsript:check('320','Ahmed','319','branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=')"
-                                                                alt="Delete"title="Delete"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon"
-                                                          title="Acknowledgement Email"
-                                                            data-bs-toggle="tooltip">
-                                                            <a href="#"
-                                                                onclick="aknowlgdeMail(&quot;http://beta.tdonlines.com/resend_email.php?action=subagent_registration_email&amp;agent_id=320&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=&quot;)"
-                                                                alt="Reg.Email" data-toggle="modal"
-                                                                data-target="#showAknMail" data-placement="top">
-                                                                <i class="fa fa-envelope-o"></i>
-                                                            </a>
-                                                        </div>
 
+
+                                            <tr class="yellowThing" onmouseover="this.className='yellowThing';"
+                                                onmouseout="this.className='phps_row_0';" role="row">
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;</td>
+                                                <td align="center">&nbsp;Sub Agent inActivated 319</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp; - </td>
+                                                <td align="center">&nbsp;Sub Agent inActivated 320</td>
+                                                <!--td align=center>&nbsp;12-Aug-2023 13:38:29</td-->
+
+                                                <td align="center">
+                                                    <!--12-Aug-2023 18:02:21 -->
+                                                    <div class="dateWrapper withTime">
+                                                        <div class="onlyDate">12</div>
+                                                        <div class="monthYear">Aug<br>2023
+                                                        </div>
                                                     </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="https://beta.tdonlines.com/index.php?Msg=3"
-                                                            onclick="subagent_login('http://beta.tdonlines.com/agent_login.php?action_type=login&amp;txt_username=Ahmed&amp;txt_password=be9481eee7bd7b3d50ce31b24d2c43e353ec045efbc79a05fdcb23c258327a2a&amp;txt_agent_code=CA0320&amp;FLAG=AS_AG&amp;chk=34e2ad7b31cd9ee87c038c10fd6fbe310314ba67abb73a686f0d1087267d7a1d&amp;consult_eid=ZVlNM3dXa3E2SGIrWC9vNUM4Q2hsdz09&amp;tms=1&amp;backoffice_user=Beta_Tdo')"
-                                                            alt="Login as Sub Agent" title="Login As User"
-                                                            data-toggle="tooltip" data-placement="top">
-                                                            <i class="fa fa-user"></i>
-                                                        </a>
+                                                    <div class="secCont">13:38</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="phps_row_0" onmouseover="this.className='yellowThing';"
+                                                onmouseout="this.className='phps_row_0';" role="row">
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp;</td>
+                                                <td align="center">&nbsp;Sub Agent inActivated 319</td>
+                                                <td align="center">&nbsp;0.000</td>
+                                                <td align="center">&nbsp; - </td>
+                                                <td align="center">&nbsp;Sub Agent inActivated 320</td>
+                                                <!--td align=center>&nbsp;12-Aug-2023 13:38:27</td-->
+
+                                                <td align="center">
+                                                    <!--12-Aug-2023 18:02:21 -->
+                                                    <div class="dateWrapper withTime">
+                                                        <div class="onlyDate">12</div>
+                                                        <div class="monthYear">Aug<br>2023
+                                                        </div>
                                                     </div>
-
-                                                    <div class="input-group-addon"><a data-bs-toggle="tooltip"
-                                                           title="Change Password" data-placement="top"
-                                                            href="ChangePassword.html"><i
-                                                                class="fa fa-key"></i>
-                                                        </a></div>
-
+                                                    <div class="secCont">13:38</div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1289,34 +1280,26 @@
                                 </div>
                             </div>
                         </div>
-                     
+
                     </div>
-
                 </div>
-
-
-
             </div>
+         
+   
 
 
 
 
 
-        </form>
+
+    </form>
 
 
-
-        <!-- End -->
+    <!-- End -->
 
 
 
     </div>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        });
-      </script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -1326,12 +1309,49 @@
     var wrapper1 = document.getElementById('wrapper1');
     var wrapper2 = document.getElementById('wrapper2');
     wrapper1.onscroll = function () {
-      wrapper2.scrollLeft = wrapper1.scrollLeft;
+        wrapper2.scrollLeft = wrapper1.scrollLeft;
     };
     wrapper2.onscroll = function () {
-      wrapper1.scrollLeft = wrapper2.scrollLeft;
+        wrapper1.scrollLeft = wrapper2.scrollLeft;
     };
-  </script>
+</script>
+<script>
 
+    /*Added by brynal  5may17 START*/
+    $(function () {
+        $("#all-supplier").click(function () {
+            if ($(this).prop('checked') == true) {
+                console.log('in')
+                $(".exclude-supplier").prop('checked', true);
+            } else {
+                console.log('out')
+                $(".exclude-supplier").prop('checked', false);
+            }
+        });
+    });
+
+
+
+    // For Check-In/Out Datepicker
+
+    const arrivalDate = flatpickr("#arrivalDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const departureDate = flatpickr("#departureDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const checkTrashBtn = document.getElementById("checkTrashBtn");
+    checkTrashBtn.addEventListener("click", function () {
+        arrivalDate.clear();
+        departureDate.clear();
+
+    });
+</script>
 
 </html>

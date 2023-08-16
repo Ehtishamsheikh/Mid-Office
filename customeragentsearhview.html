@@ -1134,16 +1134,14 @@
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">VIEW USER DETAILS</h5>
+                    <h5 style="font-size:14pt;font-weight: 500;">VIEW AGENT DETAILS</h5>
                 </div>
                 <div class="col-md-7">
 
                 </div>
                 <div class="col-md-2">
-
                     <i class="fa-solid fa-house-chimney"></i><span> / <a href="customeragentsearchbutton.html"
-                            style="text-decoration:none;color:grey"> Search Agents</a> / View User</span>
-
+                            style="text-decoration:none;color:grey"> Search Agent</a> / View Agent</span>
                 </div>
 
             </div>
@@ -1156,157 +1154,292 @@
     <div class="container-fluid pt-0 p-4" id="content-pad">
 
         <!-- First Row-->
+
+
+
+
+        <div class="panel-body" style="background-color: #337ab7;padding-bottom: 1px; padding-top: 4px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: white !important;font-size:15px;
+                                margin-left: 20px;">CA0319 / Shiv Travels / Shiv Chauhan / Active</h5>
+                </div>
+            </div>
+        </div>
         <form>
-
-            <div class="panel-body form-group removeMargins">
-                <div class="dataTables_scroll">
-                    <div id="mesID" style="display: none;">
-
+            <div class="panel-body">
+                <div class="form-group" style="text-align: center;float: right;display:flex;">
+                    <div class="input-group-addon">
+                        <a href="customeragentsearchedit.html"
+                            data-bs-toggle="tooltip" title="Edit" data-placement="top">
+                            <!-- <img src="images/edit.gif" border=0 alt="Edit" title="Edit"> -->
+                            <i class="fa fa-pencil-square-o"></i>
+                        </a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                           <a href="customeradduserdetails.html"><button type="button" name="Add" value="Add Sub User" class="btn btn-dark btn-sm topBtn"
-                                onclick="javascript:window.location.href='sub_agent.php?action=add&amp;parent_agent=319&amp;consultant=&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search='">
-                                <i class="fa fa-plus"></i>&nbsp;Add User
-                            </button></a>
+                    <div class="input-group-addon">
+                        <a href="agent.php?action=priority&amp;id=319&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search="
+                            data-bs-toggle="tooltip" title="Online Supplier Settings" data-placement="top">
+                            <!-- <img src="images/settings.gif" alt="Settings" border=0 title="Online Supplier Settings"> -->
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                    </div>
+                    <div class="input-group-addon">
+                        <a href="agent.php?action=local_priority&amp;id=319&amp;id=&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search="
+                            data-bs-toggle="tooltip" title="Offline Supplier Settings"
+                            data-placement="top"><!-- <img src="images/settings_localmarkup.jpg" alt="Settings" border=0 title="Offline Supplier Settings"> -->
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                    <div class="input-group-addon">
+                        <a href="agent.php?action=gateway&amp;id=319&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search="
+                            data-bs-toggle="tooltip" title="Gateway"
+                            data-placement="top"><!-- img src="images/gateway.gif" alt="Gateway" title="Gateway" border=0> -->
+                            <i class="fa fa-credit-card"></i>
+                        </a>
+                    </div>
+                    <div class="input-group-addon">
+                        <a href="agent.php?action=inactive&amp;id=319&amp;admin_id=shiv&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search="
+                            data-bs-toggle="tooltip" data-placement="top" title=""
+                            title="Click To Deactivate">
+                            <!-- <img src="images/activate.gif" border=0 alt="Click To Deactivate" title="Click To Deactivate"> -->
+                            <i class="fa fa-check-circle"></i>
+                        </a>
+                    </div>
+                    <div class="input-group-addon">
+                        <a href="#"
+                            onclick="Javacsript:window.open(&quot;http://beta.tdonlines.com/tms/resend_email.php?action=agent_registration_email&amp;agent_id=319&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=&quot;,&quot;RegEmail&quot;,&quot;width=400,height=400&quot;)"
+                            data-bs-toggle="tooltip" title="Reg.Email" data-placement="top">
+                            <!-- <img src="images/reg_email2.gif" alt="Reg.Email" title="Reg.Email" border="0"> -->
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                    <div class="input-group-addon">
+                        <a href="#"
+                            onclick="Javacsript:window.open(&quot;http://beta.tdonlines.com/tms/resend_email.php?action=agent_confirmation_email&amp;agent_id=319&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=&quot;,&quot;RegEmail&quot;,&quot;width=200,height=200&quot;)"
+                            data-bs-toggle="tooltip" title="Conf.Email" data-placement="top">
+                            <!-- <img src="images/con_email2.gif" alt="Conf. Email" title="Conf.Email" border="0" > -->
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="input-group-addon">
+                        <a href="login_as_agent.php?id=319&amp;username=shiv&amp;password=d777cb83434761edd5a0fbb4a992215eb1103e6c12fb165583a1665ad050fecc&amp;agent_code=CA0319&amp;action_type=login&amp;a=1&amp;FLAG=AS_AD"
+                            target="_blank" data-bs-toggle="tooltip" title="Login as Admin"
+                            data-placement="top">
+                            <!-- <img src="images/login.gif" border=0 alt="Login As Admin" Title="Login as Admin"> -->
+                            <i class="fa fa-sign-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="input-group-addon">
+                        <a href="http://beta.tdonlines.com/agent_login.php?action_type=login&amp;txt_username=shiv&amp;txt_password=d777cb83434761edd5a0fbb4a992215eb1103e6c12fb165583a1665ad050fecc&amp;txt_agent_code=CA0319&amp;FLAG=AS_AG&amp;tms=1"
+                            target="_blank" data-bs-toggle="tooltip" title="Login As Agent"
+                            data-placement="top">
+                            <!-- <img src="images/login_agent.jpg" border=0 alt="Login AS Agent" title="Login As Agent"> -->
+                            <i class="fa fa-sign-in"></i>
+                        </a>
+                    </div>
+                    <!--
+    <a href="javascript:confirm_delete('delete','319','shiv');"><img src="images/delete.gif" alt="Delete" title="Delete" border=0></a>
+
+    -->
+                </div>
+                <br>
+                <div class="form-group">
+                    <h5>Access</h5>
+                </div>
+                <div class="row">
+
+
+                    <div class="form-group col-md-3">
+                        <label>Username</label>
+                        <div>
+                            shiv
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <h5>Agency Information</h5>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Agency Name</label>
+                        <div>
+                            Shiv Travels
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Register Since</label>
+                        <div>
+                            28-Jul-2023
+
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Company (Agency Email)</label>
+                        <div>
+                            shiv.chauhan@qtechsoftware.com
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>First Name</label>
+                        <div>
+                            Shiv
+
                         </div>
                     </div>
 
-                    <div id="search_sup_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                        <div class="row">
-                            <div class="col-sm-10"></div>
-                            <div class="col-sm-2">
-                                <div id="search_sup_filter" class="dataTables_filter"><label>
-                                        <h5 style="display:inline"><i class="pe-7s-search srchWithinPg"
-                                                data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Search within this table"></i></h5><input
-                                            type="search" class="form-control form-control-sm input-sm" placeholder=""
-                                            aria-controls="search_sup">
-                                    </label></div>
-                            </div>
+                    <div class="form-group col-md-3">
+                        <label>Middle Name</label>
+                        <div>
+                            —
+
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="doubleScroll-scroll-wrapper" id="wrapper1"
-                                    style="height: 20px; overflow: scroll hidden; width: 1320px;">
-                                    <div class="suwala-doubleScroll-scroll" style="height: 20px; width: 1320px;"></div>
-                                </div>
-                                <div id="wrapper2" style="overflow: scroll hidden;">
-                                    <table id="search_sup"
-                                        class="table table-bordered table-striped table-hover table-responsive dataTable no-footer"
-                                        role="grid" aria-describedby="search_sup_info">
-                                        <thead>
-                                            <tr role="row">
-                                                <th class="phps_header sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 219.2px;">&nbsp;Agent Code</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 249.2px;">&nbsp;Agency Name</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 199.2px;">&nbsp;Username</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 297.2px;">&nbsp;Contact Person</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 157.2px;">&nbsp;Status</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 312px;">&nbsp;Actions</th>
-                                            </tr>
+                    </div>
 
-                                        </thead>
-                                        <tbody>
-
-
-
-                                            <tr class="phps_row_1 odd" role="row">
-                                                <td>
-                                                    &nbsp;CA0320
-                                                </td>
-                                                <td>
-                                                    &nbsp;travel
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed&nbsp;&nbsp;Ali
-                                                </td>
-                                                <td>
-                                                    <h5><span class="tdd_label label-success">Active</span></h5>
-                                                </td>
-                                                <td class="actionlink">
-                                                    <div class="actionCont">
-                                                        <div class="input-group-addon">
-                                                            <a href="CustomersEditUserDetails.html"
-                                                                alt="Edit" title="Edit"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a href="customerviewuserdetailsdeactivate.html"
-                                                                title="Click To Deactivate"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-check-circle"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a onclick="Javacsript:check('320','Ahmed','319','branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=')"
-                                                                alt="Delete"title="Delete"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon"
-                                                          title="Acknowledgement Email"
-                                                            data-bs-toggle="tooltip">
-                                                            <a href="#"
-                                                                onclick="aknowlgdeMail(&quot;http://beta.tdonlines.com/resend_email.php?action=subagent_registration_email&amp;agent_id=320&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=&quot;)"
-                                                                alt="Reg.Email" data-toggle="modal"
-                                                                data-target="#showAknMail" data-placement="top">
-                                                                <i class="fa fa-envelope-o"></i>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="https://beta.tdonlines.com/index.php?Msg=3"
-                                                            onclick="subagent_login('http://beta.tdonlines.com/agent_login.php?action_type=login&amp;txt_username=Ahmed&amp;txt_password=be9481eee7bd7b3d50ce31b24d2c43e353ec045efbc79a05fdcb23c258327a2a&amp;txt_agent_code=CA0320&amp;FLAG=AS_AG&amp;chk=34e2ad7b31cd9ee87c038c10fd6fbe310314ba67abb73a686f0d1087267d7a1d&amp;consult_eid=ZVlNM3dXa3E2SGIrWC9vNUM4Q2hsdz09&amp;tms=1&amp;backoffice_user=Beta_Tdo')"
-                                                            alt="Login as Sub Agent" title="Login As User"
-                                                            data-toggle="tooltip" data-placement="top">
-                                                            <i class="fa fa-user"></i>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="input-group-addon"><a data-bs-toggle="tooltip"
-                                                           title="Change Password" data-placement="top"
-                                                            href="ChangePassword.html"><i
-                                                                class="fa fa-key"></i>
-                                                        </a></div>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                    <div class="form-group col-md-3">
+                        <label>Last Name</label>
+                        <div>
+                            Chauhan
                         </div>
-                     
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Agent Logo</label>
+                        <div>No logo.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Designation</label>
+                        <div>
+                            —
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Nature of Business</label>
+                        <div>
+                            0
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label>Address</label>
+                        <div>
+                            Goregaon
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-3">
+                        <label>City</label>
+                        <div>
+                            Mumbai
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Pincode/ Zipcode</label>
+                        <div>
+                            400052
+                            400052
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>IATA Status</label>
+                        <div>Not Approved </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Phone #</label>
+                        <div>
+                            91-9867847563
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Mobile #</label>
+                        <div>
+                            91-7463575336
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label>Fax #</label>
+                        <div>
+                            —
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <h5>Agent Settings</h5>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Time Zone</label>
+                        <div>
+                            GMT + (5.5)
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Agent Type</label>
+                        <div>
+                            Cash </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Credit Limit</label>
+                        <div>INR&nbsp;0.000</div>
+                    </div>
+                    <!--<div class="form-group col-md-3">
+    <label>Lead Time</label>
+    <div id='agent_type'>
+                                            0
+        &nbsp;hours
+    </div>
+</div>	-->
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Branch</label>
+                        <div>Mumbai Branch</div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Consultant</label>
+                        <div>rohan vartak</div>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <h5>Rights</h5>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>Make Bookings</label>
+                        <div> Yes </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label>Debug Mode</label>
+                        <div> No </div>
                     </div>
 
                 </div>
-
-
-
             </div>
+    </div>
+    </div>
 
 
 
 
 
-        </form>
+
+    </form>
 
 
-
-        <!-- End -->
+    <!-- End -->
 
 
 
@@ -1322,16 +1455,28 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/bootstrap-select.js"></script>
-<script type="text/javascript">
-    var wrapper1 = document.getElementById('wrapper1');
-    var wrapper2 = document.getElementById('wrapper2');
-    wrapper1.onscroll = function () {
-      wrapper2.scrollLeft = wrapper1.scrollLeft;
-    };
-    wrapper2.onscroll = function () {
-      wrapper1.scrollLeft = wrapper2.scrollLeft;
-    };
-  </script>
 
+<script>
+    // For Check-In/Out Datepicker
+
+    const arrivalDate = flatpickr("#arrivalDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const departureDate = flatpickr("#departureDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const checkTrashBtn = document.getElementById("checkTrashBtn");
+    checkTrashBtn.addEventListener("click", function () {
+        arrivalDate.clear();
+        departureDate.clear();
+
+    });
+</script>
 
 </html>

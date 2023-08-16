@@ -1134,15 +1134,12 @@
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">VIEW USER DETAILS</h5>
+                    <h5 style="font-size:14pt;font-weight: 500;">INVOICING RULES</h5>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6">
 
                 </div>
-                <div class="col-md-2">
-
-                    <i class="fa-solid fa-house-chimney"></i><span> / <a href="customeragentsearchbutton.html"
-                            style="text-decoration:none;color:grey"> Search Agents</a> / View User</span>
+                <div class="col-md-3">
 
                 </div>
 
@@ -1156,167 +1153,122 @@
     <div class="container-fluid pt-0 p-4" id="content-pad">
 
         <!-- First Row-->
+
+
+
+
+        <div class="panel-body" style="background-color: #337ab7;padding-bottom: 1px; padding-top: 4px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: white !important;font-size:15px;
+                                margin-left: 20px;">CA0319 / Shiv Travels / Shiv Chauhan / Active</h5>
+                </div>
+            </div>
+        </div>
         <form>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label>Invoice on</label>
+                        <div class="radioline1">
 
-            <div class="panel-body form-group removeMargins">
-                <div class="dataTables_scroll">
-                    <div id="mesID" style="display: none;">
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" value="expiration_date" name="credit_id"
+                                    onclick="display_div(this);" id="check_expiration_date" class="test123"><label
+                                    for="check_expiration_date">Deadline date</label>
+                            </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                           <a href="customeradduserdetails.html"><button type="button" name="Add" value="Add Sub User" class="btn btn-dark btn-sm topBtn"
-                                onclick="javascript:window.location.href='sub_agent.php?action=add&amp;parent_agent=319&amp;consultant=&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search='">
-                                <i class="fa fa-plus"></i>&nbsp;Add User
-                            </button></a>
-                        </div>
-                    </div>
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" value="on_voucher_date" name="credit_id"
+                                    onclick="display_div(this);" id="app" checked=""><label
+                                    for="check_on_voucher_date">Voucher Date</label>
+                            </div>
 
-                    <div id="search_sup_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                        <div class="row">
-                            <div class="col-sm-10"></div>
-                            <div class="col-sm-2">
-                                <div id="search_sup_filter" class="dataTables_filter"><label>
-                                        <h5 style="display:inline"><i class="pe-7s-search srchWithinPg"
-                                                data-toggle="tooltip" data-placement="top"
-                                                data-original-title="Search within this table"></i></h5><input
-                                            type="search" class="form-control form-control-sm input-sm" placeholder=""
-                                            aria-controls="search_sup">
-                                    </label></div>
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" value="service_date" name="credit_id" onclick="display_div(this);"
+                                    id="app"><label for="check_service_date">Service Date</label>
+                            </div>
+
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" value="before_check_in" name="credit_id"
+                                    onclick="display_div(this);" id="app"><label
+                                    for="check_before_check_in">Before Service Date</label>
+                            </div>
+
+                            <div class="radio radio-success radio-inline">
+                                <input type="radio" value="check_out_date" name="credit_id" onclick="display_div(this);"
+                                    id="app"><label for="check_check_out_date">Check Out Date</label>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="doubleScroll-scroll-wrapper" id="wrapper1"
-                                    style="height: 20px; overflow: scroll hidden; width: 1320px;">
-                                    <div class="suwala-doubleScroll-scroll" style="height: 20px; width: 1320px;"></div>
-                                </div>
-                                <div id="wrapper2" style="overflow: scroll hidden;">
-                                    <table id="search_sup"
-                                        class="table table-bordered table-striped table-hover table-responsive dataTable no-footer"
-                                        role="grid" aria-describedby="search_sup_info">
-                                        <thead>
-                                            <tr role="row">
-                                                <th class="phps_header sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 219.2px;">&nbsp;Agent Code</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 249.2px;">&nbsp;Agency Name</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 199.2px;">&nbsp;Username</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 297.2px;">&nbsp;Contact Person</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 157.2px;">&nbsp;Status</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1"
-                                                    style="width: 312px;">&nbsp;Actions</th>
-                                            </tr>
-
-                                        </thead>
-                                        <tbody>
-
-
-
-                                            <tr class="phps_row_1 odd" role="row">
-                                                <td>
-                                                    &nbsp;CA0320
-                                                </td>
-                                                <td>
-                                                    &nbsp;travel
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed
-                                                </td>
-                                                <td>
-                                                    &nbsp;Ahmed&nbsp;&nbsp;Ali
-                                                </td>
-                                                <td>
-                                                    <h5><span class="tdd_label label-success">Active</span></h5>
-                                                </td>
-                                                <td class="actionlink">
-                                                    <div class="actionCont">
-                                                        <div class="input-group-addon">
-                                                            <a href="CustomersEditUserDetails.html"
-                                                                alt="Edit" title="Edit"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-pencil-square-o"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a href="customerviewuserdetailsdeactivate.html"
-                                                                title="Click To Deactivate"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-check-circle"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon">
-                                                            <a onclick="Javacsript:check('320','Ahmed','319','branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=')"
-                                                                alt="Delete"title="Delete"
-                                                                data-bs-toggle="tooltip" data-placement="top">
-                                                                <i class="fa fa-trash"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="input-group-addon"
-                                                          title="Acknowledgement Email"
-                                                            data-bs-toggle="tooltip">
-                                                            <a href="#"
-                                                                onclick="aknowlgdeMail(&quot;http://beta.tdonlines.com/resend_email.php?action=subagent_registration_email&amp;agent_id=320&amp;branch_search=&amp;consultant_search=&amp;agent_type_search=&amp;country_srch=&amp;agency_name_search=&amp;username_search=&amp;status_search=&amp;person_name_search=&amp;search=agent&amp;country_search=&amp;city_search=&amp;currency_search=&amp;rate_profile_search=&amp;email_search=&amp;agency_id_search=&quot;)"
-                                                                alt="Reg.Email" data-toggle="modal"
-                                                                data-target="#showAknMail" data-placement="top">
-                                                                <i class="fa fa-envelope-o"></i>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="input-group-addon">
-                                                        <a href="https://beta.tdonlines.com/index.php?Msg=3"
-                                                            onclick="subagent_login('http://beta.tdonlines.com/agent_login.php?action_type=login&amp;txt_username=Ahmed&amp;txt_password=be9481eee7bd7b3d50ce31b24d2c43e353ec045efbc79a05fdcb23c258327a2a&amp;txt_agent_code=CA0320&amp;FLAG=AS_AG&amp;chk=34e2ad7b31cd9ee87c038c10fd6fbe310314ba67abb73a686f0d1087267d7a1d&amp;consult_eid=ZVlNM3dXa3E2SGIrWC9vNUM4Q2hsdz09&amp;tms=1&amp;backoffice_user=Beta_Tdo')"
-                                                            alt="Login as Sub Agent" title="Login As User"
-                                                            data-toggle="tooltip" data-placement="top">
-                                                            <i class="fa fa-user"></i>
-                                                        </a>
-                                                    </div>
-
-                                                    <div class="input-group-addon"><a data-bs-toggle="tooltip"
-                                                           title="Change Password" data-placement="top"
-                                                            href="ChangePassword.html"><i
-                                                                class="fa fa-key"></i>
-                                                        </a></div>
-
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                     
                     </div>
-
                 </div>
 
-
+                <div class="row" id="show_days" style="display:none;">
+                    <div class="form-group col-md-12">
+                        <select class="selectpicker show-menu-arrow form-control wid80px bs-select-hidden"
+                            name="before_days" id="before_days" data-live-search="true">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                       
+                        <label>&nbsp;&nbsp;Day(s) before Service Date</label>
+                    </div>
+                </div>
+                <br>
+                <!-- Added by brynal start -->
+                <!-- Added by brynal end -->
+                <div class="form-group col-md-12 ">
+                    <!--input class="btn btn-primary" type="submit" name="Save" value="Save"-->
+                    <button class="btn btn-dark btn-sm save" type="submit" name="Save" value="Save">
+                        <i class="fa fa-floppy-o"></i>&nbsp;&nbsp;Save
+                    </button>
+                </div>
 
             </div>
+    </div>
+    </div>
 
 
 
 
 
-        </form>
+
+    </form>
 
 
-
-        <!-- End -->
+    <!-- End -->
 
 
 
     </div>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        });
-      </script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -1326,12 +1278,49 @@
     var wrapper1 = document.getElementById('wrapper1');
     var wrapper2 = document.getElementById('wrapper2');
     wrapper1.onscroll = function () {
-      wrapper2.scrollLeft = wrapper1.scrollLeft;
+        wrapper2.scrollLeft = wrapper1.scrollLeft;
     };
     wrapper2.onscroll = function () {
-      wrapper1.scrollLeft = wrapper2.scrollLeft;
+        wrapper1.scrollLeft = wrapper2.scrollLeft;
     };
-  </script>
+</script>
+<script>
 
+    /*Added by brynal  5may17 START*/
+    $(function () {
+        $("#all-supplier").click(function () {
+            if ($(this).prop('checked') == true) {
+                console.log('in')
+                $(".exclude-supplier").prop('checked', true);
+            } else {
+                console.log('out')
+                $(".exclude-supplier").prop('checked', false);
+            }
+        });
+    });
+
+
+
+    // For Check-In/Out Datepicker
+
+    const arrivalDate = flatpickr("#arrivalDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const departureDate = flatpickr("#departureDate", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+    const checkTrashBtn = document.getElementById("checkTrashBtn");
+    checkTrashBtn.addEventListener("click", function () {
+        arrivalDate.clear();
+        departureDate.clear();
+
+    });
+</script>
 
 </html>
