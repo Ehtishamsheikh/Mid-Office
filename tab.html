@@ -30,40 +30,40 @@
 </head>
 
 <body>
-
     <div class="color-line">
     </div>
-  
+
     <!---                                    NAv BAr Secton            -->
     <section>
-      <nav class="navbar navbar-expand-lg bg-light" id="firstNav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="TDO LOGO Without Background.png" class="img-fluid"
-              alt="Responsive image" style="max-height: 50px; margin-left: 10px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html">Welcome <b>Beta_Tdo</b></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-regular fa-clock"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user fa-2xl"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg bg-light" id="firstNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="TDO LOGO Without Background.png" class="img-fluid"
+                        alt="Responsive image" style="max-height: 50px; margin-left: 10px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Welcome <b>Beta_Tdo</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-clock"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user fa-2xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </section>
-  
+
   <!--      2nd Navbar Section For Search Bookkng And other Queries           -->
   <section>
     <nav class="navbar navbar-expand-lg" id="secondNav">
@@ -1010,246 +1010,245 @@
     </nav>
 
   </section>
+
     <!--    3rd Header for search booking          -->
     <section>
         <header>
             <div class="row pt-0  pb-0 p-4">
 
                 <div class="col-md-3">
-                    <h5 style="font-size:14pt;font-weight: 500;">SEARCH VISA CATEGORY</h5>
-                </div>
-                <div class="col-md-6">
 
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-7">
 
+                </div>
+                <div class="col-md-2">
+                    <i class="fa-solid fa-house-chimney"></i><span> /<a href="index.html"
+                            style="text-decoration:none;color:grey"> Add Transfer Tariff</a></span>
                 </div>
 
             </div>
         </header>
 
-
     </section>
 
-    <!---Body Paneel Menu items-->
-    <div class="container-fluid pt-0 p-4"id="content-pad">
-
-        <!-- First Row-->
-<form>
-        <div class="panel-body">
-
-            <div class="row">
-
-                <div class="col-md-3 form-group " id="aofficeid">
-                    <label>Visa Category: </label>
-                    <input id="vcategory" name="vcategory" type="text" maxlength="50"
-                        class="form-control form-control-sm test123" value="">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="form-group col-md-12">
-                    <br>
-                    <button type="submit" class="btn btn-dark btn-sm">
-                        <i class="fa fa-search"></i>&nbsp;Search
-                    </button>
-                    <button type="button" onclick="resetAll();" class="btn btn-dark btn-sm">
-                        <i class="fa fa-search"></i>&nbsp;Reset
-                    </button>
-
-                </div>
-            </div>
-
-        </div>
-</form>
+    <!--    Panel Body        -->
 
 
-        <div class="hpanel">
-            <div class="panel-heading mt-5 mb-2"style="font-size: 14pt;
-            font-weight: 500;color:grey">Visa Category List</div>
-            <form>
-            <div id="hotel">
-                <div class="panel-body removeMargins">
-                    <div class="col-md-12" style="height: 30px;">
-                        <div class="form-group">
-                            <div class="custPaging pgType2">
-                                <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                                    class="custPaging  pgType2">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center" width="70%"></td>
-                                            <td align="right" width="30%"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col_hide">&nbsp;</div>
-                    <table id="tableres" class="table table-bordered table-striped table-hover table-responsive dataTable no-footer">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Multicurrency</td>
-                                <td align="center" class="actionlink">
-                                    <div class="actionCont width_table">
-                                        <div class="input-group-addon">
-                                            <a href="VisaVisaCategoryAdd.html"
-                                                data-toggle="tooltip" data-original-title="Edit" data-placement="top">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </a>
-                                        </div>
-                                        <!-- <div class="input-group-addon"  data-toggle="tooltip" data-original-title="View" data-placement="top">
-                              <a href="visa_details.php?action=view_category&id=1">
-                                <i class="fa fa-eye"></i>
-                              </a>
-                            </div> -->
-                                        <div class="input-group-addon">
-                                            <a href="visa_details.php?action=inactive_category&amp;id=1"
-                                                data-toggle="tooltip" data-placement="top" title=""
-                                                data-original-title="Click To Deactivate">
-                                                <i class="fa fa-check-circle"></i>
-                                            </a>
-                                        </div>
-                                        <div class="input-group-addon" data-toggle="tooltip" data-placement="top"
-                                            title="" data-original-title="Delete">
-                                            <a onclick="javascript:confirm_delete1('delete_category','1');">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Tourist</td>
-                                <td align="center" class="actionlink">
-                                    <div class="actionCont width_table">
-                                        <div class="input-group-addon">
-                                          <a href="VisaVisaCategoryAdd.html"
-                                                data-toggle="tooltip" data-original-title="Edit" data-placement="top">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </a>
-                                        </div>
-                                        <!-- <div class="input-group-addon"  data-toggle="tooltip" data-original-title="View" data-placement="top">
-                              <a href="visa_details.php?action=view_category&id=3">
-                                <i class="fa fa-eye"></i>
-                              </a>
-                            </div> -->
-                                        <div class="input-group-addon">
-                                            <a href="visa_details.php?action=inactive_category&amp;id=3"
-                                                data-toggle="tooltip" data-placement="top" title=""
-                                                data-original-title="Click To Deactivate">
-                                                <i class="fa fa-check-circle"></i>
-                                            </a>
-                                        </div>
-                                        <div class="input-group-addon" data-toggle="tooltip" data-placement="top"
-                                            title="" data-original-title="Delete">
-                                            <a onclick="javascript:confirm_delete1('delete_category','3');">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Visit</td>
-                                <td align="center" class="actionlink">
-                                    <div class="actionCont width_table">
-                                        <div class="input-group-addon">
-                                          <a href="VisaVisaCategoryAdd.html"
-                                                data-toggle="tooltip" data-original-title="Edit" data-placement="top">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </a>
-                                        </div>
-                                        <!-- <div class="input-group-addon"  data-toggle="tooltip" data-original-title="View" data-placement="top">
-                              <a href="visa_details.php?action=view_category&id=4">
-                                <i class="fa fa-eye"></i>
-                              </a>
-                            </div> -->
-                                        <div class="input-group-addon">
-                                            <a href="visa_details.php?action=inactive_category&amp;id=4"
-                                                data-toggle="tooltip" data-placement="top" title=""
-                                                data-original-title="Click To Deactivate">
-                                                <i class="fa fa-check-circle"></i>
-                                            </a>
-                                        </div>
-                                        <div class="input-group-addon" data-toggle="tooltip" data-placement="top"
-                                            title="" data-original-title="Delete">
-                                            <a onclick="javascript:confirm_delete1('delete_category','4');">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Visa_Check</td>
-                                <td align="center" class="actionlink">
-                                    <div class="actionCont width_table">
-                                        <div class="input-group-addon">
-                                          <a href="VisaVisaCategoryAdd.html"
-                                                data-toggle="tooltip" data-original-title="Edit" data-placement="top">
-                                                <i class="fa fa-pencil-square-o"></i>
-                                            </a>
-                                        </div>
-                                        <!-- <div class="input-group-addon"  data-toggle="tooltip" data-original-title="View" data-placement="top">
-                              <a href="visa_details.php?action=view_category&id=5">
-                                <i class="fa fa-eye"></i>
-                              </a>
-                            </div> -->
-                                        <div class="input-group-addon">
-                                            <a href="visa_details.php?action=inactive_category&amp;id=5"
-                                                data-toggle="tooltip" data-placement="top" title=""
-                                                data-original-title="Click To Deactivate">
-                                                <i class="fa fa-check-circle"></i>
-                                            </a>
-                                        </div>
-                                        <div class="input-group-addon" data-toggle="tooltip" data-placement="top"
-                                            title="" data-original-title="Delete">
-                                            <a onclick="javascript:confirm_delete1('delete_category','5');">
-                                                <i class="fa fa-trash"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="col-md-12" style="height: 30px;">
-                        <div class="form-group">
-                            <div class="custPaging pgType2">
-                                <table width="100%" cellpadding="0" cellspacing="0" border="0"
-                                    class="custPaging  pgType2">
-                                    <tbody>
-                                        <tr>
-                                            <td align="center" width="70%"></td>
-                                            <td align="right" width="30%"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</form>
-        <!-- End -->
+    <div class="container-fluid pt-0 p-4" id="content-pad">
 
 
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tab Example</title>
+          <!-- Include any necessary CSS and JavaScript libraries, like Bootstrap -->
+          <!-- Example: 
+          <link rel="stylesheet" href="bootstrap.min.css">
+          <script src="jquery.min.js"></script>
+          <script src="bootstrap.min.js"></script>
+          -->
+      </head>
+      <body>
+      
+      <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
+                  aria-controls="products" aria-selected="true">Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab"
+                  aria-controls="services" aria-selected="false">Services</a>
+          </li>
+      </ul>
+      
+      <div class="tab-content" id="mainTabContent">
+          <!-- Products Tab -->
+          <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+              <ul class="nav nav-tabs" id="productsSubTabs" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="subtab1-tab" data-toggle="tab" href="#subtab1" role="tab"
+                          aria-controls="subtab1" aria-selected="true">Subtab 1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="subtab2-tab" data-toggle="tab" href="#subtab2" role="tab"
+                          aria-controls="subtab2" aria-selected="false">Subtab 2</a>
+                  </li>
+              </ul>
+      
+              <div class="tab-content" id="productsSubTabContent">
+                  <div class="tab-pane fade show active" id="subtab1" role="tabpanel" aria-labelledby="subtab1-tab">
+                      <!-- Content for Subtab 1 under Products -->
+                  </div>
+                  <div class="tab-pane fade" id="subtab2" role="tabpanel" aria-labelledby="subtab2-tab">
+                      <!-- Content for Subtab 2 under Products -->
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Services Tab -->
+          <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+              <ul class="nav nav-tabs" id="servicesSubTabs" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="subtab3-tab" data-toggle="tab" href="#subtab3" role="tab"
+                          aria-controls="subtab3" aria-selected="true">Subtab 3</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="subtab4-tab" data-toggle="tab" href="#subtab4" role="tab"
+                          aria-controls="subtab4" aria-selected="false">Subtab 4</a>
+                  </li>
+              </ul>
+      
+              <div class="tab-content" id="servicesSubTabContent">
+                  <div class="tab-pane fade show active" id="subtab3" role="tabpanel" aria-labelledby="subtab3-tab">
+                      <!-- Content for Subtab 3 under Services -->
+                  </div>
+                  <div class="tab-pane fade" id="subtab4" role="tabpanel" aria-labelledby="subtab4-tab">
+                      <!-- Content for Subtab 4 under Services -->
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </body>
+      </html>
+      
+        
+
+
+
+
+        <!-- END -->`
 
     </div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/bootstrap-select.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script>
 
+    // For Showing And Hiding Div Rows And Fields Inside Buttons
+
+    $(document).ready(function () {
+        $("#r_1").hide();
+        $("#r_2").hide();
+        $("#r_3").hide();
+        $("#r_4").hide();
+        $("#r_5").hide();
+        $("#r_6").hide();
+
+
+        $("#moreFilterBtn").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_1").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_1").hide();
+            }
+
+        });
+
+        $("#moreFilterBtn2").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn2").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_2").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_2").hide();
+            }
+
+        });
+
+        $("#moreFilterBtn3").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn3").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_3").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_3").hide();
+            }
+
+        });
+        $("#moreFilterBtn4").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn4").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_4").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_4").hide();
+            }
+
+        });
+        $("#moreFilterBtn5").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn5").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_5").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_5").hide();
+            }
+
+        });
+        $("#moreFilterBtn6").click(function () {
+            // $(this).hide();
+            let srcVal = $("#moreFilterBtn6").attr("src");
+            if (srcVal == "plus_white_img.jpg") {
+                $(this).attr("src", "minus_white_img.jpg")
+                $("#r_6").show();
+            } else {
+                $(this).attr("src", "plus_white_img.jpg")
+                $("#r_6").hide();
+            }
+
+        });
+
+
+
+
+    });
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+    // For Add Hottel Datepicker
+
+    const serviceStartdatepicker = flatpickr("#confirm_date", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+    });
+
+
+
+
+
+
+</script>
+<script type="text/javascript">
+    var wrapper1 = document.getElementById('wrapper1');
+    var wrapper2 = document.getElementById('wrapper2');
+    wrapper1.onscroll = function () {
+        wrapper2.scrollLeft = wrapper1.scrollLeft;
+    };
+    wrapper2.onscroll = function () {
+        wrapper1.scrollLeft = wrapper2.scrollLeft;
+    };
+</script>
 
 
 </html>
