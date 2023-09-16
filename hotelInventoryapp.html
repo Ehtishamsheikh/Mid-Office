@@ -202,10 +202,7 @@
                         <input type="radio" name="rrAdd" value="yes" id="fit">
                         <label for="rrAddYes">FIT Package Supplier</label>
                     </div>
-                    <div class="radio radio-success radio-inline">
-                        <input type="radio" name="rrAdd" value="yes" id="airline">
-                        <label for="rrAddYes">Airline Supplier</label>
-                    </div>
+                  
 
 
                 </div>
@@ -886,7 +883,19 @@ redirectvisa.addEventListener("change", function () {
         window.location.href = "VisaVisaRatesAddSupplierVisaRates .html";
     }
 });
+ // Get a reference to the checkbox element
+ const redirectfit = document.getElementById("fit");
+
+// Add an event listener to the checkbox
+redirectfit.addEventListener("change", function () {
+    // Check if the checkbox is checked
+    if (redirectfit.checked) {
+        // Redirect to the desired page
+        window.location.href = "MastersPackageAdd.html";
+    }
+});
 </script>
 
 
 </html>
+MastersPackageAdd.html

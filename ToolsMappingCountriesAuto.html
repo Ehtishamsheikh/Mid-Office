@@ -1072,10 +1072,10 @@
 
                 <div class="row mt-3">
                     <div class="form-group col-md-12">
-                        <button class="btn btn-dark btn-sm" type="button" onclick="mapping_report('show')"
+                    <a href="ToolsMappingCountriesAutoShow.html" class="btn btn-dark btn-sm" type="button" onclick="mapping_report('show')"
                             value="Show Report">
                             <i class="fa fa-eye"></i>&nbsp;Show
-                        </button>&nbsp;&nbsp;
+                    </a>&nbsp;&nbsp;
 
                         <button class="btn btn-dark btn-sm" type="button" onclick="mapping_report('download')"
                             value="Download Report" id="download_report" style="display: none;">
@@ -1101,34 +1101,49 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/bootstrap-select.js"></script>
 
-<script>
 
+<script type="text/javascript">
 
-    // For Validation  Datepicker
-
-    const from_date = flatpickr("#from_date", {
-        dateFormat: "Y-m-d",
-        minDate: "today"
-    });
-
-
-    const to_date = flatpickr("#to_date", {
-        dateFormat: "Y-m-d",
-        minDate: "today"
-    });
-
-
-    const validTrashBtn = document.getElementById("validTrashBtn");
-    validTrashBtn.addEventListener("click", function () {
-        from_date.clear();
-        to_date.clear();
-
-    });
-
-
-
-
-
-</script>
+  function mapping_report(type)
+  {
+      if($("#supplier").val()==""){
+       showWarAlert("Select supplier",'supplier',document.forms['supplier_form'],'selectpicker');
+       return false;
+      }
+      if($("#country_code").val()==""){
+       showWarAlert("Select Country");
+       return false;
+      }
+      var url = "country_supplier_mapping.php";
+      var form = $("#supplier_form");
+      $("#result").html();
+      if(type=="download"){
+             $("#action").val("download_mapping_report");
+             var serializedForm = form.serialize();   		
+          location.href=url+"?"+serializedForm;
+          return false;
+      }else if(type=="show"){
+          document.getElementById('loading').style.display = 'block';	
+             $("#action").val("show_mapping_report");
+             $("#result").html("");	
+             var serializedForm = form.serialize();
+             $("#result").html();
+             $.post(url, serializedForm, function(data)
+          {
+            $("#result").html(data);	
+            document.getElementById('loading').style.display = 'none';		
+          });   		
+      }
+  }
+  function hide_report(value){
+      if(value==''){
+          $('#download_report').hide();
+          }
+      else{
+          $('#download_report').show();
+          }
+  }
+  
+  </script>
 
 </html>
